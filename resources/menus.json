@@ -17,7 +17,7 @@
     {
         "menu_id": "python",
         "menu_name": "파이썬",
-        "link": "#"
+        "link": "python.html"
     },
     {
         "menu_id": "oop",
