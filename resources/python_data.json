@@ -27,33 +27,282 @@
     "chapter_concepts": [],
     "chapter_problems": [
       {
-        "from": "더블릿",
-        "name": "문제 이름",
-        "link": "http://220.89.64.243/30stair/radd/radd.php?pname=radd"
+        "from": "백준",
+        "name": "두 수 비교하기",
+        "link": "https://www.acmicpc.net/problem/1330"
+      },
+      {
+        "from": "백준",
+        "name": "시험 성적",
+        "link": "https://www.acmicpc.net/problem/9498"
+      },
+      {
+        "from": "백준",
+        "name": "윤년",
+        "link": "https://www.acmicpc.net/problem/2753"
+      },
+      {
+        "from": "백준",
+        "name": "사분면 고르기",
+        "link": "https://www.acmicpc.net/problem/14681"
       }
     ]
   },
   {
-    "chapter_id": "ch-if",
-    "chapter_name": "if",
+    "chapter_id": "ch-while",
+    "chapter_name": "while",
     "chapter_concepts": [],
     "chapter_problems": [
       {
         "from": "더블릿",
-        "name": "문제 이름",
-        "link": "http://220.89.64.243/30stair/radd/radd.php?pname=radd"
+        "name": "3n+1",
+        "link": "http://220.89.64.243/30stair/3np1/3np1.php?pname=3np1"
+      },
+      {
+        "from": "백준",
+        "name": "더하기 사이클",
+        "link": "https://www.acmicpc.net/problem/1110"
       }
     ]
   },
   {
-    "chapter_id": "ch-if",
-    "chapter_name": "if",
+    "chapter_id": "ch-for",
+    "chapter_name": "for, range",
     "chapter_concepts": [],
     "chapter_problems": [
       {
         "from": "더블릿",
-        "name": "문제 이름",
+        "name": "약수 종합 선물 세트",
+        "link": "http://220.89.64.243/30stair/ft/ft.php?pname=ft"
+      },
+      {
+        "from": "더블릿",
+        "name": "완전수, 부족수, 과잉수",
+        "link": "http://220.89.64.243/30stair/perfect/perfect.php?pname=perfect"
+      },
+      {
+        "from": "백준",
+        "name": "A + B - 8",
+        "link": "https://www.acmicpc.net/problem/11022"
+      },
+      {
+        "from": "백준",
+        "name": "별 찍기 - 1",
+        "link": "https://www.acmicpc.net/problem/2438"
+      },
+      {
+        "from": "백준",
+        "name": "별 찍기 - 2",
+        "link": "https://www.acmicpc.net/problem/2439"
+      }
+    ]
+  },
+  {
+    "chapter_id": "ch-str",
+    "chapter_name": "문자열(str)",
+    "chapter_concepts": [],
+    "chapter_problems": [
+      {
+        "from": "백준",
+        "name": "별 찍기 - 2",
+        "link": "https://www.acmicpc.net/problem/2439"
+      },
+      {
+        "from": "더블릿",
+        "name": "단어별 역순",
+        "link": "http://220.89.64.243/30stair/esrever/esrever.php?pname=esrever"
+      },
+      {
+        "from": "백준",
+        "name": "상수",
+        "link": "https://www.acmicpc.net/problem/2908"
+      },
+      {
+        "from": "더블릿",
+        "name": "알파벳 빈도수",
+        "link": "http://220.89.64.243/30stair/fa/fa.php?pname=fa"
+      },
+      {
+        "from": "백준",
+        "name": "알파벳 찾기",
+        "link": "https://www.acmicpc.net/problem/10809"
+      },
+      {
+        "from": "백준",
+        "name": "단어 공부",
+        "link": "https://www.acmicpc.net/problem/1157"
+      }
+    ]
+  },
+  {
+    "chapter_id": "ch-list-map",
+    "chapter_name": "list, map",
+    "chapter_concepts": [],
+    "chapter_problems": [
+      {
+        "from": "더블릿",
+        "name": "반대로 출력",
+        "link": "http://220.89.64.243/30stair/rprint/rprint.php?pname=rprint"
+      },
+      {
+        "from": "더블릿",
+        "name": "서로 다른 수의 개수",
+        "link": "hhttp://220.89.64.243/30stair/distinct/distinct.php?pname=distinct"
+      },
+      {
+        "from": "더블릿",
+        "name": "최소 위치 출력",
+        "link": "http://220.89.64.243/30stair/pmin/pmin.php?pname=pmin"
+      },
+      {
+        "from": "더블릿",
+        "name": "숫자 히스토그램",
+        "link": "http://220.89.64.243/30stair/ma/ma.php?pname=ma"
+      }
+    ]
+  },
+  {
+    "chapter_id": "ch-list2",
+    "chapter_name": "중첩 리스트, 리스트 표현식",
+    "chapter_concepts": [],
+    "chapter_problems": [
+      {
+        "from": "더블릿",
+        "name": "3 * 3 블럭의 합",
+        "link": "http://220.89.64.243/30stair/block/block.php?pname=block"
+      },
+      {
+        "from": "더블릿",
+        "name": "파스칼의 삼각형",
+        "link": "http://220.89.64.243/30stair/pascal_tri/pascal_tri.php?pname=pascal_tri"
+      },
+      {
+        "from": "자체",
+        "name": "구구단 표 출력",
+        "link": "#"
+      },
+      {
+        "from": "더블릿",
+        "name": "반대로 출력 (숏코딩)",
+        "link": "http://220.89.64.243/30stair/rprint/rprint.php?pname=rprint"
+      }
+    ]
+  },
+  {
+    "chapter_id": "ch-func",
+    "chapter_name": "함수, 재귀",
+    "chapter_concepts": [],
+    "chapter_problems": [
+      {
+        "from": "더블릿",
+        "name": "뒤집어 더하기",
         "link": "http://220.89.64.243/30stair/radd/radd.php?pname=radd"
+      },
+      {
+        "from": "더블릿",
+        "name": "수 뒤집기",
+        "link": "http://220.89.64.243/30stair/rev/rev.php?pname=rev"
+      },
+      {
+        "from": "백준",
+        "name": "상수",
+        "link": "https://www.acmicpc.net/problem/2908"
+      },
+      {
+        "from": "더블릿",
+        "name": "골드바하의 추측",
+        "link": "http://220.89.64.243/30stair/goldbach/goldbach.php?pname=goldbach"
+      },
+      {
+        "from": "더블릿",
+        "name": "x의 y거듭제곱",
+        "link": "http://220.89.64.243/30stair/powerofx/powerofx.php?pname=powerofx"
+      },
+      {
+        "from": "더블릿",
+        "name": "유클리드 호제법",
+        "link": "http://220.89.64.243/30stair/euclid/euclid.php?pname=euclid"
+      },
+      {
+        "from": "더블릿",
+        "name": "이진수로 변경",
+        "link": "http://220.89.64.243/30stair/tobin/tobin.php?pname=tobin"
+      },
+      {
+        "from": "더블릿",
+        "name": "좌우 대칭 산 모양",
+        "link": "http://220.89.64.243/30stair/pTp/pTp.php?pname=pTp"
+      },
+      {
+        "from": "더블릿",
+        "name": "하노이 탑",
+        "link": "http://220.89.64.243/30stair/hanoi/hanoi.php?pname=hanoi"
+      }
+    ]
+  },
+  {
+    "chapter_id": "ch-tuple",
+    "chapter_name": "튜플(tuple)",
+    "chapter_concepts": [],
+    "chapter_problems": [
+      {
+        "from": "백준",
+        "name": "좌표 정렬하기",
+        "link": "https://www.acmicpc.net/problem/11650"
+      },
+      {
+        "from": "백준",
+        "name": "단어 정렬",
+        "link": "https://www.acmicpc.net/problem/1181"
+      }
+    ]
+  },
+  {
+    "chapter_id": "ch-zip-enum",
+    "chapter_name": "zip, enumerate",
+    "chapter_concepts": [],
+    "chapter_problems": [
+      {
+        "from": "자체",
+        "name": "벡터의 덧셈",
+        "link": "#"
+      },
+      {
+        "from": "자체",
+        "name": "벡터의 내적",
+        "link": "#"
+      },
+      {
+        "from": "더블릿",
+        "name": "최소 위치 출력 (숏코딩)",
+        "link": "http://220.89.64.243/30stair/pmin/pmin.php?pname=pmin"
+      }
+    ]
+  },
+  {
+    "chapter_id": "ch-set-dict",
+    "chapter_name": "set, dict",
+    "chapter_concepts": [],
+    "chapter_problems": [
+      {
+        "from": "더블릿",
+        "name": "서로 다른 수의 개수",
+        "link": "hhttp://220.89.64.243/30stair/distinct/distinct.php?pname=distinct"
+      },
+      {
+        "from": "백준",
+        "name": "듣보잡",
+        "link": "https://www.acmicpc.net/problem/1764"
+      },
+      {
+        "from": "백준",
+        "name": "카드",
+        "link": "https://www.acmicpc.net/problem/11652"
+      },
+      {
+        "from": "백준",
+        "name": "단어 공부",
+        "link": "https://www.acmicpc.net/problem/1157"
       }
     ]
   }
