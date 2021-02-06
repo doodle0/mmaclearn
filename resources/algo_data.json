@@ -375,6 +375,14 @@
     ]
   },
   {
+    "chapter_id": "ch-uf",
+    "chapter_name": "Union-Find",
+    "chapter_concepts": [
+    ],
+    "chapter_problems": [
+    ]
+  },
+  {
     "chapter_id": "ch-graph2",
     "chapter_name": "그래프 2",
     "chapter_concepts": [
@@ -448,8 +456,8 @@
     ]
   },
   {
-    "chapter_id": "ch-uf",
-    "chapter_name": "Union-Find",
+    "chapter_id": "ch-dp2",
+    "chapter_name": "DP 2",
     "chapter_concepts": [
     ],
     "chapter_problems": [
