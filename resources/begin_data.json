@@ -281,6 +281,11 @@
         "link": "http://220.89.64.243/30stair/pmin/pmin.php?pname=pmin"
       },
       {
+        "from": "백준",
+        "name": "나의 학점은?",
+        "link": "https://www.acmicpc.net/problem/17826"
+      },
+      {
         "from": "더블릿",
         "name": "평평하게 하기/box_brick",
         "link": "http://220.89.64.243/30stair/box_brick/box_brick.php?pname=box_brick"
