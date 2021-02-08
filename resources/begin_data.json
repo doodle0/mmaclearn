@@ -34,6 +34,11 @@
         "link": "http://220.89.64.243/30stair/sum/sum.php?pname=sum"
       },
       {
+        "from": "백준",
+        "name": "x보다 작은 수",
+        "link": "https://www.acmicpc.net/problem/10871"
+      },
+      {
         "from": "더블릿",
         "name": "순차합/seq2",
         "link": "http://220.89.64.243/30stair/seq2/seq2.php?pname=seq2"
@@ -112,6 +117,11 @@
         "from": "더블릿",
         "name": "완전수/complete",
         "link": "http://220.89.64.243/30stair/complete/complete.php?pname=complete"
+      },
+      {
+        "from": "백준",
+        "name": "더하기 사이클",
+        "link": "https://www.acmicpc.net/problem/1110"
       },
       {
         "from": "더블릿",
@@ -276,9 +286,29 @@
         "link": "http://220.89.64.243/30stair/box_brick/box_brick.php?pname=box_brick"
       },
       {
+        "from": "백준",
+        "name": "평균",
+        "link": "https://www.acmicpc.net/problem/1546"
+      },
+      {
         "from": "더블릿",
         "name": "일곱 난장이/dwarf",
         "link": "http://220.89.64.243/30stair/dwarf/dwarf.php?pname=dwarf"
+      },
+      {
+        "from": "백준",
+        "name": "나머지",
+        "link": "https://www.acmicpc.net/problem/3052"
+      },
+      {
+        "from": "백준",
+        "name": "수 정렬하기",
+        "link": "https://www.acmicpc.net/problem/2750"
+      },
+      {
+        "from": "백준",
+        "name": "숫자의 개수",
+        "link": "https://www.acmicpc.net/problem/2577"
       },
       {
         "from": "더블릿",
@@ -330,6 +360,16 @@
         "from": "더블릿",
         "name": "달팽이 배열/spiral",
         "link": "http://220.89.64.243/30stair/spiral/spiral.php?pname=spiral"
+      },
+      {
+        "from": "더블릿",
+        "name": "3*3 블럭의 합/block",
+        "link": "http://220.89.64.243/30stair/block/block.php?pname=block"
+      },
+      {
+        "from": "더블릿",
+        "name": "3*3 블록에서 최대값/block_max",
+        "link": "http://220.89.64.243/30stair/block_max/block_max.php?pname=block_max"
       },
       {
         "from": "더블릿",
