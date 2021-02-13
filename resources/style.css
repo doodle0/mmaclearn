@@ -2,6 +2,10 @@ body,h1,h2,h3,h4,h5,h6 {
     font-family: "Noto Sans KR", sans-serif
 }
 
+h1 {
+    font-weight: bold;
+}
+
 .w3-bar-block .w3-bar-item {
     padding: 16px;
     font-weight: bold;

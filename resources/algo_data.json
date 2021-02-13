@@ -198,10 +198,6 @@
       {
         "concept_title": "큐 개념",
         "link": "http://220.89.64.243/30stair/queue/queue.php?pname=queue"
-      },
-      {
-        "concept_title": "BFS 개념",
-        "link": "#"
       }
     ],
     "chapter_problems": [
@@ -232,6 +228,11 @@
       },
       {
         "from": "백준",
+        "name": "벽 부수고 이동하기",
+        "link": "https://www.acmicpc.net/problem/2206"
+      },
+      {
+        "from": "백준",
         "name": "토마토",
         "link": "https://www.acmicpc.net/problem/7576"
       }
@@ -256,6 +257,11 @@
         "from": "더블릿",
         "name": "미로찾기",
         "link": "http://220.89.64.243/30stair/starship_maze/starship_maze.php?pname=starship_maze"
+      },
+      {
+        "from": "백준",
+        "name": "섬의 개수",
+        "link": "https://www.acmicpc.net/problem/4963"
       },
       {
         "from": "백준",

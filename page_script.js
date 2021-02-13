@@ -39,15 +39,18 @@ function problemPageScript(problem_data) {
         // alert("success");
         var main = document.getElementById("main-container");
 
-        var header = document.createElement("h2");
-        header.innerHTML = "목차";
-        main.appendChild(header);
+        // var header = document.createElement("h2");
+        // header.innerHTML = "목차";
+        // main.appendChild(header);
         
-        var contents_list = document.createElement("ol");
+        var contents_list = document.createElement("div");
+        contents_list.className = "w3-bar w3-theme-l4"
         for (i in data) {
-            var li = document.createElement("li");
-            li.innerHTML = '<a href="#' + data[i].chapter_id + '">' + data[i].chapter_name + '</a>'
-            contents_list.appendChild(li);
+            var bi = document.createElement("button");
+            bi.innerHTML = data[i].chapter_name
+            bi.className = "w3-bar-item w3-button w3-hover-theme w3-mobile"
+            bi.setAttribute('onclick', "location.href='#" + data[i].chapter_id  + "'")
+            contents_list.appendChild(bi);
         }
         main.appendChild(contents_list);
 
@@ -68,15 +71,15 @@ function problemPageScript(problem_data) {
             }
 
             var pdiv = document.createElement("div");
-            pdiv.className = "w3-panel w3-card w3-light-gray problem-card";
+            pdiv.className = "w3-panel w3-card w3-theme-l5 problem-card";
 
             var pheader = document.createElement("h3");
             pheader.appendChild(document.createTextNode("문제"));
             pdiv.appendChild(pheader);
 
             var ptable = document.createElement("table");
-            ptable.className = "w3-table-all w3-hoverable";
-            ptable.innerHTML = "<thead><tr><th width=20%>번호</th><th>문제</th><th width=25%>출처</th></tr></thead>"
+            ptable.className = "w3-table-all";
+            ptable.innerHTML = '<thead><tr><th width=20%>번호</th><th>문제</th><th width=25%>출처</th></tr></thead>'
 
             for (j in data[i].chapter_problems) {
                 var pro = data[i].chapter_problems[j]
@@ -108,8 +111,8 @@ $(function() {
             bar_item.className = "w3-bar-item w3-button";
             bar_item.href = menus[i].link;
             if (window.location.pathname.endsWith(menus[i].link)) {
-                var intro = document.getElementById("myIntro");
-                intro.innerText += menus[i].menu_name;
+                document.getElementById("myIntro").innerText += " - " + menus[i].menu_name;
+                document.getElementById("myHeader").innerText += " - " + menus[i].menu_name;
                 bar_item.className += " w3-theme";
 
                 if (menus[i].problem_data) {
