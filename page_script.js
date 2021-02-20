@@ -58,9 +58,16 @@ function problemPageScript(problem_data) {
             main.appendChild(document.createElement("hr"));
 
             var header = document.createElement("h2");
+            header.className = "w3-cell w3-cell-bottom w3-mobile"
             header.id = data[i].chapter_id;
             header.appendChild(document.createTextNode(data[i].chapter_name));
             main.appendChild(header);
+            if (data[i].chapter_explanation) {
+                var exp = document.createElement("div");
+                exp.className = "w3-container w3-cell w3-cell-bottom w3-large w3-text-grey w3-mobile"
+                exp.appendChild(document.createTextNode("— " + data[i].chapter_explanation));
+                main.appendChild(exp);
+            }
 
             for (con of data[i].chapter_concepts) {
                 // <div class="w3-panel w3-blue w3-card">
