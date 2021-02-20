@@ -483,7 +483,28 @@
     "chapter_id": "ch-binsearch",
     "chapter_name": "이분 탐색, Parametric Search",
     "chapter_concepts": [],
-    "chapter_problems": []
+    "chapter_problems": [
+      {
+        "from": "백준",
+        "name": "수 찾기",
+        "link": "https://www.acmicpc.net/problem/1920"
+      },
+      {
+        "from": "백준",
+        "name": "숫자 카드 2",
+        "link": "https://www.acmicpc.net/problem/10816"
+      },
+      {
+        "from": "백준",
+        "name": "랜선 자르기",
+        "link": "https://www.acmicpc.net/problem/1654"
+      },
+      {
+        "from": "백준",
+        "name": "나무 자르기",
+        "link": "https://www.acmicpc.net/problem/2805"
+      }
+    ]
   },
   {
     "chapter_id": "ch-dp2",
@@ -526,19 +547,67 @@
     "chapter_id": "ch-segtree",
     "chapter_name": "세그먼트 트리",
     "chapter_concepts": [],
-    "chapter_problems": []
+    "chapter_problems": [
+      {
+        "from": "백준",
+        "name": "구간 합 구하기",
+        "link": "https://www.acmicpc.net/problem/2042"
+      },
+      {
+        "from": "백준",
+        "name": "구간 곱 구하기",
+        "link": "https://www.acmicpc.net/problem/11505"
+      },
+      {
+        "from": "백준",
+        "name": "최솟값과 최댓값",
+        "link": "https://www.acmicpc.net/problem/2357"
+      }
+    ]
   },
   {
     "chapter_id": "ch-str2",
     "chapter_name": "문자열 알고리즘",
     "chapter_concepts": [],
-    "chapter_problems": []
+    "chapter_problems": [
+      {
+        "from": "백준",
+        "name": "찾기",
+        "link": "https://www.acmicpc.net/problem/1786"
+      },
+      {
+        "from": "백준",
+        "name": "문자열 제곱",
+        "link": "https://www.acmicpc.net/problem/4354"
+      },
+      {
+        "from": "백준",
+        "name": "문자열 집합",
+        "link": "https://www.acmicpc.net/problem/14425"
+      }
+    ]
   },
   {
     "chapter_id": "ch-geom",
     "chapter_name": "기하",
     "chapter_concepts": [],
-    "chapter_problems": []
+    "chapter_problems": [
+      {
+        "from": "백준",
+        "name": "다각형의 면적",
+        "link": "https://www.acmicpc.net/problem/2166"
+      },
+      {
+        "from": "백준",
+        "name": "CCW",
+        "link": "https://www.acmicpc.net/problem/11758"
+      },
+      {
+        "from": "백준",
+        "name": "선분 교차 2",
+        "link": "https://www.acmicpc.net/problem/17387"
+      }
+    ]
   },
   {
     "chapter_id": "ch-sweeping",
