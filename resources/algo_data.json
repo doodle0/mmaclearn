@@ -396,6 +396,11 @@
         "from": "백준",
         "name": "집합의 표현",
         "link": "https://www.acmicpc.net/problem/1717"
+      },
+      {
+        "from": "백준",
+        "name": "여행 가자",
+        "link": "https://www.acmicpc.net/problem/1976"
       }
     ]
   },
@@ -414,6 +419,11 @@
         "from": "백준",
         "name": "특정한 최단 경로",
         "link": "https://www.acmicpc.net/problem/1504"
+      },
+      {
+        "from": "백준",
+        "name": "알고스팟",
+        "link": "https://www.acmicpc.net/problem/1261"
       },
       {
         "from": "백준",
@@ -605,9 +615,19 @@
   {
     "chapter_id": "ch-str2",
     "chapter_name": "문자열 알고리즘",
-    "chapter_explanation": "KMP, 트라이, Manacher(추가예정)",
+    "chapter_explanation": "트라이, KMP, Manacher",
     "chapter_concepts": [],
     "chapter_problems": [
+      {
+        "from": "백준",
+        "name": "문자열 집합",
+        "link": "https://www.acmicpc.net/problem/14425"
+      },
+      {
+        "from": "백준",
+        "name": "전화번호 목록",
+        "link": "https://www.acmicpc.net/problem/5052"
+      },
       {
         "from": "백준",
         "name": "찾기",
@@ -620,8 +640,18 @@
       },
       {
         "from": "백준",
-        "name": "문자열 집합",
-        "link": "https://www.acmicpc.net/problem/14425"
+        "name": "시계 사진들",
+        "link": "https://www.acmicpc.net/problem/10266"
+      },
+      {
+        "from": "백준",
+        "name": "팰린드롬??",
+        "link": "https://www.acmicpc.net/problem/11046"
+      },
+      {
+        "from": "백준",
+        "name": "가장 긴 팰린드롬 부분 문자열",
+        "link": "https://www.acmicpc.net/problem/13275"
       }
     ]
   },
