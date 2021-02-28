@@ -597,7 +597,8 @@
   },
   {
     "chapter_id": "ch-segtree",
-    "chapter_name": "세그먼트 트리, Lazy Propagation(추가예정)",
+    "chapter_name": "세그먼트 트리",
+    "chapter_explanation": "세그먼트 트리, Lazy Propagation(추가예정)",
     "chapter_concepts": [],
     "chapter_problems": [
       {
