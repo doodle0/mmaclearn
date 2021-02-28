@@ -216,6 +216,11 @@
       },
       {
         "from": "더블릿",
+        "name": "최단 거리 미로",
+        "link": "http://220.89.64.243/30stair/maze/maze.php?pname=maze"
+      },
+      {
+        "from": "더블릿",
         "name": "소수 길",
         "link": "http://220.89.64.243/30stair/prime_path/prime_path.php?pname=prime_path"
       },
@@ -223,16 +228,6 @@
         "from": "더블릿",
         "name": "댐",
         "link": "http://220.89.64.243/30stair/dam/dam.php?pname=dam"
-      },
-      {
-        "from": "더블릿",
-        "name": "최단 거리 미로",
-        "link": "http://220.89.64.243/30stair/maze/maze.php?pname=maze"
-      },
-      {
-        "from": "백준",
-        "name": "벽 부수고 이동하기",
-        "link": "https://www.acmicpc.net/problem/2206"
       },
       {
         "from": "백준",
@@ -276,6 +271,16 @@
         "from": "백준",
         "name": "치즈",
         "link": "https://www.acmicpc.net/problem/2636"
+      },
+      {
+        "from": "백준",
+        "name": "나이트의 이동",
+        "link": "https://www.acmicpc.net/problem/7562"
+      },
+      {
+        "from": "백준",
+        "name": "벽 부수고 이동하기",
+        "link": "https://www.acmicpc.net/problem/2206"
       }
     ]
   },
@@ -363,9 +368,14 @@
     ],
     "chapter_problems": [
       {
-        "from": "더블릿",
-        "name": "가장 가까운 조상",
-        "link": "http://220.89.64.243/30stair/nca/nca.php?pname=nca"
+        "from": "백준",
+        "name": "가장 가까운 공통 조상",
+        "link": "https://www.acmicpc.net/problem/3584"
+      },
+      {
+        "from": "백준",
+        "name": "트리의 부모 찾기",
+        "link": "https://www.acmicpc.net/problem/11725"
       },
       {
         "from": "더블릿",
@@ -587,7 +597,7 @@
   },
   {
     "chapter_id": "ch-segtree",
-    "chapter_name": "세그먼트 트리",
+    "chapter_name": "세그먼트 트리, Lazy Propagation(추가예정)",
     "chapter_concepts": [],
     "chapter_problems": [
       {
@@ -609,6 +619,38 @@
         "from": "백준",
         "name": "히스토그램에서 가장 큰 직사각형",
         "link": "https://www.acmicpc.net/problem/6549"
+      },
+      {
+        "from": "백준",
+        "name": "구간 합 구하기 2",
+        "link": "https://www.acmicpc.net/problem/10999"
+      }
+    ]
+  },
+  {
+    "chapter_id": "ch-sparse",
+    "chapter_name": "Sparse Table, LCA",
+    "chapter_concepts": [],
+    "chapter_problems": [
+      {
+        "from": "백준",
+        "name": "최솟값",
+        "link": "https://www.acmicpc.net/problem/10868"
+      },
+      {
+        "from": "백준",
+        "name": "합성함수와 쿼리",
+        "link": "https://www.acmicpc.net/problem/17435"
+      },
+      {
+        "from": "백준",
+        "name": "LCA 2",
+        "link": "https://www.acmicpc.net/problem/11438"
+      },
+      {
+        "from": "백준",
+        "name": "도로 네트워크",
+        "link": "https://www.acmicpc.net/problem/3176"
       }
     ]
   },
@@ -701,7 +743,7 @@
   {
     "chapter_id": "ch-etc",
     "chapter_name": "기타",
-    "chapter_explanation": "Lazy Propagation, Sparse Table, ...",
+    "chapter_explanation": "HLD, ...",
     "chapter_concepts": [],
     "chapter_problems": []
   }
