@@ -29,7 +29,7 @@
   {
     "chapter_id": "ch-recursion",
     "chapter_name": "재귀",
-    "chapter_explanation": "재귀 및 백트래킹",
+    "chapter_description": "재귀 및 백트래킹",
     "chapter_concepts": [
       {
         "concept_title": "재귀 개념",
@@ -92,7 +92,7 @@
   {
     "chapter_id": "ch-string",
     "chapter_name": "문자열",
-    "chapter_explanation": "문자열, 문자열 관련 함수",
+    "chapter_description": "문자열, 문자열 관련 함수",
     "chapter_concepts": [
       {
         "concept_title": "아스키 코드",
@@ -196,7 +196,7 @@
   {
     "chapter_id": "ch-queue",
     "chapter_name": "큐",
-    "chapter_explanation": "큐, 너비 우선 탐색(BFS)",
+    "chapter_description": "큐, 너비 우선 탐색(BFS)",
     "chapter_concepts": [
       {
         "concept_title": "큐 개념",
@@ -239,7 +239,7 @@
   {
     "chapter_id": "ch-graph1",
     "chapter_name": "그래프, 탐색",
-    "chapter_explanation": "그래프, BFS, DFS, Flood Fill",
+    "chapter_description": "그래프, BFS, DFS, Flood Fill",
     "chapter_concepts": [
       {
         "concept_title": "그래프 개념",
@@ -351,7 +351,7 @@
   {
     "chapter_id": "ch-tree",
     "chapter_name": "트리",
-    "chapter_explanation": "트리, 이진트리, 힙, Union-Find",
+    "chapter_description": "트리, 이진트리, 힙, Union-Find",
     "chapter_concepts": [
       {
         "concept_title": "트리 개념",
@@ -417,7 +417,7 @@
   {
     "chapter_id": "ch-graph2",
     "chapter_name": "그래프 2",
-    "chapter_explanation": "최단경로, 위상정렬, MST",
+    "chapter_description": "최단경로, 위상정렬, MST",
     "chapter_concepts": [],
     "chapter_problems": [
       {
@@ -598,7 +598,7 @@
   {
     "chapter_id": "ch-segtree",
     "chapter_name": "세그먼트 트리",
-    "chapter_explanation": "세그먼트 트리, Lazy Propagation(추가예정)",
+    "chapter_description": "세그먼트 트리, Lazy Propagation(추가예정)",
     "chapter_concepts": [],
     "chapter_problems": [
       {
@@ -631,6 +631,7 @@
   {
     "chapter_id": "ch-sparse",
     "chapter_name": "Sparse Table, LCA",
+    "chapter_description": "Sparse Table, LCA",
     "chapter_concepts": [],
     "chapter_problems": [
       {
@@ -650,15 +651,25 @@
       },
       {
         "from": "백준",
+        "name": "정점들의 거리",
+        "link": "https://www.acmicpc.net/problem/1761"
+      },
+      {
+        "from": "백준",
         "name": "도로 네트워크",
         "link": "https://www.acmicpc.net/problem/3176"
+      },
+      {
+        "from": "백준",
+        "name": "트리와 쿼리 2",
+        "link": "https://www.acmicpc.net/problem/13511"
       }
     ]
   },
   {
     "chapter_id": "ch-str2",
     "chapter_name": "문자열 알고리즘",
-    "chapter_explanation": "트라이, KMP, Manacher",
+    "chapter_description": "트라이, KMP, Manacher",
     "chapter_concepts": [],
     "chapter_problems": [
       {
@@ -701,7 +712,7 @@
   {
     "chapter_id": "ch-geom",
     "chapter_name": "기하",
-    "chapter_explanation": "좌표평면, CCW, Convex Hull(추가예정)",
+    "chapter_description": "좌표평면, CCW, Convex Hull(추가예정)",
     "chapter_concepts": [],
     "chapter_problems": [
       {
@@ -730,21 +741,21 @@
   {
     "chapter_id": "ch-math",
     "chapter_name": "수학",
-    "chapter_explanation": "정수론, 선형대수",
+    "chapter_description": "정수론, 선형대수",
     "chapter_concepts": [],
     "chapter_problems": []
   },
   {
     "chapter_id": "ch-graph3",
     "chapter_name": "그래프 3",
-    "chapter_explanation": "SCC, Network Flow, 이분 매칭",
+    "chapter_description": "SCC, Network Flow, 이분 매칭",
     "chapter_concepts": [],
     "chapter_problems": []
   },
   {
     "chapter_id": "ch-etc",
     "chapter_name": "기타",
-    "chapter_explanation": "HLD, ...",
+    "chapter_description": "HLD, ...",
     "chapter_concepts": [],
     "chapter_problems": []
   }

@@ -62,11 +62,11 @@ function problemPageScript(problem_data) {
             header.id = data[i].chapter_id;
             header.appendChild(document.createTextNode(data[i].chapter_name));
             main.appendChild(header);
-            if (data[i].chapter_explanation) {
-                var exp = document.createElement("div");
-                exp.className = "w3-container w3-cell w3-cell-bottom w3-large w3-text-grey w3-mobile"
-                exp.appendChild(document.createTextNode("— " + data[i].chapter_explanation));
-                main.appendChild(exp);
+            if (data[i].chapter_description) {
+                var desc = document.createElement("div");
+                desc.className = "w3-container w3-cell w3-cell-bottom w3-large w3-text-grey w3-mobile"
+                desc.appendChild(document.createTextNode("— " + data[i].chapter_description));
+                main.appendChild(desc);
             }
 
             for (con of data[i].chapter_concepts) {
