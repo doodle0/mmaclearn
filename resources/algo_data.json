@@ -355,7 +355,7 @@
     "chapter_concepts": [
       {
         "concept_title": "트리 개념",
-        "link": "http://220.89.64.243/30stair/tree_doc/tree_doc.php?pname=tree_doc"
+        "link": "docs/tree.html"
       },
       {
         "concept_title": "이진 트리",
