@@ -473,6 +473,11 @@
     "chapter_concepts": [],
     "chapter_problems": [
       {
+        "from": "백준",
+        "name": "스타트와 링크",
+        "link": "https://www.acmicpc.net/problem/14889"
+      },
+      {
         "from": "더블릿",
         "name": "비트 패턴",
         "link": "http://220.89.64.243/30stair/pat/pat.php?pname=pat"
