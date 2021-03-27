@@ -225,11 +225,6 @@
         "link": "http://220.89.64.243/30stair/prime_path/prime_path.php?pname=prime_path"
       },
       {
-        "from": "더블릿",
-        "name": "댐",
-        "link": "http://220.89.64.243/30stair/dam/dam.php?pname=dam"
-      },
-      {
         "from": "백준",
         "name": "나이트의 이동",
         "link": "https://www.acmicpc.net/problem/7562"
@@ -634,8 +629,8 @@
     ]
   },
   {
-    "chapter_id": "ch-sparse",
-    "chapter_name": "Sparse Table, LCA",
+    "chapter_id": "ch-lca",
+    "chapter_name": "LCA",
     "chapter_description": "Sparse Table, LCA",
     "chapter_concepts": [],
     "chapter_problems": [
