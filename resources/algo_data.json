@@ -533,7 +533,8 @@
   },
   {
     "chapter_id": "ch-binsearch",
-    "chapter_name": "이분 탐색, Parametric Search",
+    "chapter_name": "이분 탐색",
+    "chapter_description": "이분 탐색, Parametric Search",
     "chapter_concepts": [],
     "chapter_problems": [
       {
@@ -625,6 +626,33 @@
         "from": "백준",
         "name": "구간 합 구하기 2",
         "link": "https://www.acmicpc.net/problem/10999"
+      }
+    ]
+  },
+  {
+    "chapter_id": "ch-sweeping",
+    "chapter_name": "스위핑",
+    "chapter_concepts": [],
+    "chapter_problems": [
+      {
+        "from": "백준",
+        "name": "선 긋기",
+        "link": "https://www.acmicpc.net/problem/2170"
+      },
+      {
+        "from": "백준",
+        "name": "수상 택시",
+        "link": "https://www.acmicpc.net/problem/2836"
+      },
+      {
+        "from": "백준",
+        "name": "북서풍",
+        "link": "https://www.acmicpc.net/problem/5419"
+      },
+      {
+        "from": "백준",
+        "name": "화성 지도",
+        "link": "https://www.acmicpc.net/problem/3392"
       }
     ]
   },
@@ -729,12 +757,18 @@
         "from": "백준",
         "name": "선분 교차 2",
         "link": "https://www.acmicpc.net/problem/17387"
+      },
+      {
+        "from": "백준",
+        "name": "미술관",
+        "link": "https://www.acmicpc.net/problem/10839"
       }
     ]
   },
   {
-    "chapter_id": "ch-sweeping",
-    "chapter_name": "스위핑",
+    "chapter_id": "ch-graph3",
+    "chapter_name": "그래프 3",
+    "chapter_description": "SCC, 이분 매칭, Network Flow, MCMF",
     "chapter_concepts": [],
     "chapter_problems": []
   },
@@ -746,16 +780,9 @@
     "chapter_problems": []
   },
   {
-    "chapter_id": "ch-graph3",
-    "chapter_name": "그래프 3",
-    "chapter_description": "SCC, Network Flow, 이분 매칭",
-    "chapter_concepts": [],
-    "chapter_problems": []
-  },
-  {
     "chapter_id": "ch-etc",
     "chapter_name": "기타",
-    "chapter_description": "HLD, ...",
+    "chapter_description": "DP 최적화, HLD, ...",
     "chapter_concepts": [],
     "chapter_problems": []
   }
