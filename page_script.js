@@ -35,7 +35,7 @@ function myAccordion(id) {
 }
 
 function problemPageScript(problem_data) {
-    $.getJSON("resources/" + problem_data, function(data) {
+    $.getJSON("https://raw.githubusercontent.com/doodle0/mmac/main/resources/" + problem_data, function(data) {
         // alert("success");
         var main = document.getElementById("main-container");
 
@@ -111,23 +111,22 @@ function problemPageScript(problem_data) {
 
 $(function() {
     // TODO: footer
-    $.getJSON("resources/menus.json", function(menus) {
-        var sidebar = document.getElementById("mySidebar");
-        for (i in menus) {
-            var bar_item = document.createElement("a");
-            bar_item.className = "w3-bar-item w3-button";
-            bar_item.href = menus[i].link;
-            if (window.location.pathname.endsWith(menus[i].link)) {
-                document.getElementById("myIntro").innerText += " - " + menus[i].menu_name;
-                document.getElementById("myHeader").innerText += " - " + menus[i].menu_name;
-                bar_item.className += " w3-theme";
+    $.getJSON("https://raw.githubusercontent.com/doodle0/mmac/main/resources/menus.json", function(menus) {
+        let sidebar = $("#sidebar-ul")[0];
+        for (let i in menus) {
+            let lnk = document.createElement("a");
+            lnk.className = "nav-link link-dark";
+            lnk.href = menus[i].link;
+            lnk.appendChild(document.createTextNode(menus[i].menu_name))
+            let li = document.createElement("li");
+            li.appendChild(lnk);
+            sidebar.appendChild(li);
 
+            if (window.location.pathname.endsWith(menus[i].link)) {
                 if (menus[i].problem_data) {
                     problemPageScript(menus[i].problem_data);
                 }
             }
-            bar_item.appendChild(document.createTextNode(menus[i].menu_name))
-            sidebar.appendChild(bar_item);
         }
     });
 });
