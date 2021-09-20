@@ -3,7 +3,7 @@
 <title>명문학원</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -14,50 +14,94 @@
 
 <script src="https://kit.fontawesome.com/f7d7de57c7.js" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="resources/style.css">
 
 <body>
-  <div class="d-flex flex-row" style="height: 100vh;">
-    <!-- sidebar -->
-    <nav id="sidebar" class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
-      <a class="w3-bar-item w3-button w3-border-bottom w3-large" href="index.html"><img src="resources/u_mmac_logo_201311.gif" style="width:100%;"></a>
-      <hr>
-      <ul id="sidebar-ul" class="nav nav-pills flex-column mb-auto">
-        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-        <li><a href="#" class="nav-link link-dark">Dashboard</a></li>
-      </ul>
-      <hr>
-      <div class="dropdown">
-        <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
-          <strong>mdo</strong>
-        </a>
-        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-          <li><a class="dropdown-item" href="#">New project...</a></li>
-          <li><a class="dropdown-item" href="#">Settings</a></li>
-          <li><a class="dropdown-item" href="#">Profile</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Sign out</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- main -->
-    <main class="overflow-auto">
-      <div class="jumbotron jumbotron-fluid bg-theme text-light px-5"><h1>명문학원</h1></div>
-
-      <div id="main-container" class="w3-container" style="padding:32px">
+  <div class="container-fluid">
+    <div class="row" style="height: 100vh;">
+      <!-- sidebar -->
+      <div class="col-md-3 flex-grow-md-1 bg-light">
+        <nav id="sidebar" class="d-flex flex-column sticky-top">
+          <a class="mx-auto" href="index.html"><img src="resources/u_mmac_logo_201311.gif" class="mx-auto" style="width:100%; max-width: 250px;"></a>
+          <hr>
+          <ul id="sidebar-ul" class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+            <li><a href="#" class="nav-link link-dark">Dashboard</a></li>
+          </ul>
+        </nav>
       </div>
 
-      <footer class="w3-container w3-theme" style="padding:32px">
-        <p>Footer information goes here</p>
-      </footer>
-    </main>
-    
-    <script src="page_script.js"></script>
-  </div>
+      <!-- main -->
+      <main class="col px-0 flex-grow-1">
+        <div class="container-fluid bg-light p-5"><h1>명문학원 - 파이썬</h1></div>
+
+        <div id="main-container" class="container-fluid" style="padding:32px">
+          <ul class="nav justify-content-center">
+            <li class="nav-item"><a class="nav-link" href="#ch-function">함수</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ch-function">재귀</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ch-function">문자열</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ch-function">스택</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ch-function">큐</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ch-function">그래프, 탐색</a></li>
+            <li class="nav-item"><a class="nav-link" href="#ch-function">DP</a></li>
+          </ul>
+          <div class="card card-default mb-3">
+            <div class="card-header">
+              <div class="row">
+                <h3 class="col-auto m-0">문자열</h3>
+                <div class="col-auto align-self-end text-muted">— 문자열, 문자열 관련 함수</div>
+              </div>
+            </div>
+            <div class="card-body">
+              <a class="btn btn-outline-primary" href="docs/ascii.html" role="button"><i class="far fa-file w3-large" aria-hidden="true"></i>&nbsp;아스키 코드</a>
+              <a class="btn btn-outline-primary" href="docs/ascii.html" role="button"><i class="far fa-file w3-large" aria-hidden="true"></i>&nbsp;문자열 개념</a>
+            </div>
+            <table class="table table-striped">
+              <thead><tr><th width="20%">번호</th><th>문제</th><th width="25%">출처</th></tr></thead>
+              <tr><td>1</td><td><a class="w3-text-indigo" href="https://www.acmicpc.net/problem/11654">아스키 코드</a></td><td>백준</td></tr>
+              <tr><td>2</td><td><a class="w3-text-indigo" href="https://www.acmicpc.net/problem/10809">알파벳 찾기</a></td><td>백준</td></tr>
+              <tr><td>3</td><td><a class="w3-text-indigo" href="http://220.89.64.243/30stair/fa/fa.php?pname=fa">알파벳 빈도수</a></td><td>더블릿</td></tr>
+              <tr><td>4</td><td><a class="w3-text-indigo" href="https://www.acmicpc.net/problem/1157">단어 공부</a></td><td>백준</td></tr>
+              <tr><td>5</td><td><a class="w3-text-indigo" href="http://220.89.64.243/30stair/radix/radix.php?pname=radix">진법 변환</a></td><td>더블릿</td></tr>
+              <tr><td>6</td><td><a class="w3-text-indigo" href="https://www.acmicpc.net/problem/1152">단어의 개수</a></td><td>백준</td></tr>
+              <tr><td>7</td><td><a class="w3-text-indigo" href="http://220.89.64.243/30stair/esrever/esrever.php?pname=esrever">단어별 역순</a></td><td>더블릿</td></tr>
+              <tr><td>8</td><td><a class="w3-text-indigo" href="http://220.89.64.243/30stair/comma/comma.php?pname=comma">콤마 찍기</a></td><td>더블릿</td></tr>
+              <tr><td>9</td><td><a class="w3-text-indigo" href="http://220.89.64.243/30stair/crypt/crypt.php?pname=crypt">암호 해독</a></td><td>더블릿</td></tr>
+            </table>
+          </div>
+          <div class="card card-default">
+            <div class="card-header">
+              <div class="row">
+                <h3 class="col-auto m-0">문자열</h3>
+                <div class="col-auto align-self-end text-muted">— 문자열, 문자열 관련 함수</div>
+              </div>
+            </div>
+            <div class="card-body">
+              <a class="btn btn-outline-primary" href="docs/ascii.html" role="button"><i class="far fa-file w3-large" aria-hidden="true"></i>&nbsp;아스키 코드</a>
+              <a class="btn btn-outline-primary" href="docs/ascii.html" role="button"><i class="far fa-file w3-large" aria-hidden="true"></i>&nbsp;문자열 개념</a>
+            </div>
+            <table class="table table-striped">
+              <thead><tr><th width="20%">번호</th><th>문제</th><th width="25%">출처</th></tr></thead>
+              <tr><td>1</td><td><a class="w3-text-indigo" href="https://www.acmicpc.net/problem/11654">아스키 코드</a></td><td>백준</td></tr>
+              <tr><td>2</td><td><a class="w3-text-indigo" href="https://www.acmicpc.net/problem/10809">알파벳 찾기</a></td><td>백준</td></tr>
+              <tr><td>3</td><td><a class="w3-text-indigo" href="http://220.89.64.243/30stair/fa/fa.php?pname=fa">알파벳 빈도수</a></td><td>더블릿</td></tr>
+              <tr><td>4</td><td><a class="w3-text-indigo" href="https://www.acmicpc.net/problem/1157">단어 공부</a></td><td>백준</td></tr>
+              <tr><td>5</td><td><a class="w3-text-indigo" href="http://220.89.64.243/30stair/radix/radix.php?pname=radix">진법 변환</a></td><td>더블릿</td></tr>
+              <tr><td>6</td><td><a class="w3-text-indigo" href="https://www.acmicpc.net/problem/1152">단어의 개수</a></td><td>백준</td></tr>
+              <tr><td>7</td><td><a class="w3-text-indigo" href="http://220.89.64.243/30stair/esrever/esrever.php?pname=esrever">단어별 역순</a></td><td>더블릿</td></tr>
+              <tr><td>8</td><td><a class="w3-text-indigo" href="http://220.89.64.243/30stair/comma/comma.php?pname=comma">콤마 찍기</a></td><td>더블릿</td></tr>
+              <tr><td>9</td><td><a class="w3-text-indigo" href="http://220.89.64.243/30stair/crypt/crypt.php?pname=crypt">암호 해독</a></td><td>더블릿</td></tr>
+            </table>
+          </div>
+          <hr>
+        </div>
+      </main>
+      
+      <!--script src="page_script.js"></script-->
+    </div>
+    </div>
 </body>
 
 </html>
