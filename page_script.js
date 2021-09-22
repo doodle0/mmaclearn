@@ -49,7 +49,7 @@ function makeChapterCardTable(chapterInfo) {
 }
 
 function problemPageScript(problemDataFile) {
-    $.getJSON("https://raw.githubusercontent.com/doodle0/mmac/main/resources/" + problemDataFile, function(problemData) {
+    $.getJSON("resources/" + problemDataFile, function(problemData) {
         if (!problemData) return;
 
         let mainContainer = $("#main-container");
@@ -84,7 +84,7 @@ function problemPageScript(problemDataFile) {
 
 // onLoad
 $(function() {
-    $.getJSON("https://raw.githubusercontent.com/doodle0/mmac/main/resources/menus.json", function(menus) {
+    $.getJSON("resources/menus.json", function(menus) {
         let sidebar = $("#sidebar-ul");
         for (let menu of menus) {
             sidebar.append(
