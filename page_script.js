@@ -1,130 +1,112 @@
-// Open and close the sidebar on medium and small screens
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
-
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-
-// Change style of top container on scroll
-window.onscroll = function () { myFunction() };
-function myFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
-        document.getElementById("myIntro").classList.add("w3-show-inline-block");
-    } else {
-        document.getElementById("myIntro").classList.remove("w3-show-inline-block");
-        document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+function makeChapterCardHeader(chapterInfo) {
+    let row = $('<div class="row">').append(
+        $('<h3 class="col-auto m-0">')
+            .text(chapterInfo.chapter_name)
+    )
+    if (chapterInfo.chapter_description) {
+        row.append(
+            $('<div class="col-auto align-self-end text-muted">')
+                .text("— " + chapterInfo.chapter_description)
+        )
     }
+    return $('<div class="card-header">').append(row);
 }
-
-// Accordions
-function myAccordion(id) {
-    var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-        x.previousElementSibling.className += " w3-theme";
-    } else {
-        x.className = x.className.replace("w3-show", "");
-        x.previousElementSibling.className =
-            x.previousElementSibling.className.replace(" w3-theme", "");
+function makeChapterCardBody(chapterInfo) {
+    if (!chapterInfo.chapter_concepts || !chapterInfo.chapter_concepts.length) return null;
+    let body = $('<div class="card-body">');
+    for (let concept of chapterInfo.chapter_concepts) {
+        body.append(
+            $('<a class="btn btn-outline-primary mx-1" role="button">')
+                .attr("href", "docs/" + concept.link)
+                .append('<i class="far fa-file w3-large">')
+                .append("&nbsp;" + concept.concept_title)
+        )
     }
+    return body;
+}
+function makeChapterCardTable(chapterInfo) {
+    if (!chapterInfo.chapter_problems || !chapterInfo.chapter_problems.length) return null;
+    let table = $('<table class="table table-striped mb-0">').append(
+        $('<thead><tr><th width="20%">번호</th><th>문제</th><th width="25%">출처</th></tr></thead>')
+    )
+
+    let tableBody = $('<tbody>');
+    for (let pi in chapterInfo.chapter_problems) {
+        let problem = chapterInfo.chapter_problems[pi];
+        tableBody.append(
+            $('<tr>')
+                .append($('<td>').text(pi))
+                .append(
+                    $('<td>').append(
+                        $('<a>').attr("href", problem.link).text(problem.name)
+                    )
+                )
+                .append($('<td>').text(problem.from))
+        )
+    }
+
+    return table.append(tableBody);
 }
 
-function problemPageScript(problem_data) {
-    $.getJSON("https://raw.githubusercontent.com/doodle0/mmac/main/resources/" + problem_data, function(data) {
-        // alert("success");
-        var main = document.getElementById("main-container");
+function problemPageScript(problemDataFile) {
+    $.getJSON("https://raw.githubusercontent.com/doodle0/mmac/main/resources/" + problemDataFile, function(problemData) {
+        if (!problemData) return;
 
-        // var header = document.createElement("h2");
-        // header.innerHTML = "목차";
-        // main.appendChild(header);
-        
-        var contents_list = document.createElement("div");
-        contents_list.className = "w3-bar w3-theme-l4"
-        for (i in data) {
-            var bi = document.createElement("button");
-            bi.innerHTML = data[i].chapter_name
-            bi.className = "w3-bar-item w3-button w3-hover-theme w3-mobile"
-            bi.setAttribute('onclick', "location.href='#" + data[i].chapter_id  + "'")
-            contents_list.appendChild(bi);
-        }
-        main.appendChild(contents_list);
+        let mainContainer = $("#main-container");
 
-        for (i in data) {
-            main.appendChild(document.createElement("hr"));
+        // 상단 nav 만들기
+        let chapterNav = $('<ul id="chapter-nav" class="nav nav-pills justify-content-around">');
+        mainContainer.append(chapterNav);
 
-            var header = document.createElement("h2");
-            header.className = "w3-cell w3-cell-bottom w3-mobile"
-            header.id = data[i].chapter_id;
-            header.appendChild(document.createTextNode(data[i].chapter_name));
-            main.appendChild(header);
-            if (data[i].chapter_description) {
-                var desc = document.createElement("div");
-                desc.className = "w3-container w3-cell w3-cell-bottom w3-large w3-text-grey w3-mobile"
-                desc.appendChild(document.createTextNode("— " + data[i].chapter_description));
-                main.appendChild(desc);
-            }
+        for (let chapter of problemData) {
+            console.log(chapter)
+            // 내비게이션에 챕터 제목 추가
+            chapterNav.append(
+                $('<li class="nav-item">').append(
+                    $('<a class="nav-link">')
+                        .attr("href", "#" + chapter.chapter_id)
+                        .text(chapter.chapter_name)
+                )
+            );
 
-            for (con of data[i].chapter_concepts) {
-                // <div class="w3-panel w3-blue w3-card">
-                var concept_card = document.createElement("div");
-                concept_card.className = "w3-panel w3-blue w3-card";
-                concept_card.innerHTML = '<p><i class="far fa-file w3-large"></i>&nbsp;<a href="' + con.link + '">' + con.concept_title + '</a></p>'
-                main.appendChild(concept_card)
-            }
-
-            var pdiv = document.createElement("div");
-            pdiv.className = "w3-panel w3-card w3-theme-l5 problem-card";
-
-            var pheader = document.createElement("h3");
-            pheader.appendChild(document.createTextNode("문제"));
-            pdiv.appendChild(pheader);
-
-            var ptable = document.createElement("table");
-            ptable.className = "w3-table-all";
-            ptable.innerHTML = '<thead><tr><th width=20%>번호</th><th>문제</th><th width=25%>출처</th></tr></thead>'
-
-            for (j in data[i].chapter_problems) {
-                var pro = data[i].chapter_problems[j]
-                var row = document.createElement("tr");
-                row.innerHTML = '<td>'
-                    + (j*1 + 1)
-                    + '</td><td><a class="w3-text-indigo" href="'
-                    + pro.link
-                    + '">'
-                    + pro.name
-                    + '</a></td><td>'
-                    + pro.from
-                    + '</td>';
-                ptable.appendChild(row);
-            }
-
-            pdiv.appendChild(ptable);
-            main.appendChild(pdiv);
+            // 챕처마다 카드 추가
+            let chapterCard =
+                $('<div class="card card-default shadow-sm my-4">')
+                    .attr("id", chapter.chapter_id)
+                    .append(makeChapterCardHeader(chapter))
+                    .append(makeChapterCardBody(chapter))
+                    .append(makeChapterCardTable(chapter))
+            
+            mainContainer.append(chapterCard);
         }
     });
 }
 
+// onLoad
 $(function() {
-    // TODO: footer
     $.getJSON("https://raw.githubusercontent.com/doodle0/mmac/main/resources/menus.json", function(menus) {
-        let sidebar = $("#sidebar-ul")[0];
-        for (let i in menus) {
-            let lnk = document.createElement("a");
-            lnk.className = "nav-link link-dark";
-            lnk.href = menus[i].link;
-            lnk.appendChild(document.createTextNode(menus[i].menu_name))
-            let li = document.createElement("li");
-            li.appendChild(lnk);
-            sidebar.appendChild(li);
+        let sidebar = $("#sidebar-ul");
+        for (let menu of menus) {
+            sidebar.append(
+                $("<li>").append(
+                     $('<a>')
+                        .addClass(
+                            window.location.pathname.endsWith(menu.link)
+                                ? "nav-link active"
+                                : "nav-link link-dark"
+                        )
+                        .attr("href", menu.link)
+                        .text(menu.menu_name)
+                )
+            );
 
-            if (window.location.pathname.endsWith(menus[i].link)) {
-                if (menus[i].problem_data) {
-                    problemPageScript(menus[i].problem_data);
+            // i가 현재 페이지를 가리키는 메뉴일 때
+            // TODO: 제대로 고치기
+            if (window.location.pathname.endsWith(menu.link)) {
+                $("h1").text($("h1").text() + " - " + menu.menu_name);
+                document.title += " - " + menu.menu_name;
+                if (menu.problem_data) {
+                    problemPageScript(menu.problem_data);
                 }
             }
         }

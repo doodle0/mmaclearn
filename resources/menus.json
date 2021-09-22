@@ -23,11 +23,6 @@
         "problem_data": "python_data.json"
     },
     {
-        "menu_id": "oop",
-        "menu_name": "객체지향",
-        "link": "#"
-    },
-    {
         "menu_id": "ref",
         "menu_name": "참고자료",
         "link": "https://drive.google.com/drive/folders/1AKzLbQDBmO5GXQyddUQEs0b3nIKk_-9b?usp=sharing"
