@@ -85,4 +85,4 @@
 
 ## CSS
 
-모든 페이지에 CSS 코드는 최소화하고, 상기한 Jekyll 테마를 적용하거나 W3.CSS를 사용하는 것을 원칙으로 합니다. [(W3.CSS 도큐멘테이션)](https://www.w3schools.com/w3css/default.asp)
+모든 페이지에 CSS 코드는 최소화하고, 상기한 Jekyll 테마를 적용하거나 Bootstrap 프레임워크를 사용하는 것을 원칙으로 합니다. (2021.09.22.부로 W3-CSS 대신 부트스트랩을 사용합니다.)
