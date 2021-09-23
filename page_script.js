@@ -17,8 +17,8 @@ function makeChapterCardBody(chapterInfo) {
     for (let concept of chapterInfo.chapter_concepts) {
         body.append(
             $('<a class="btn btn-outline-primary mx-1" role="button">')
-                .attr("href", "docs/" + concept.link)
-                .append('<i class="far fa-file w3-large">')
+                .attr("href", concept.link)
+                .append('<i class="far fa-file">')
                 .append("&nbsp;" + concept.concept_title)
         )
     }
@@ -48,23 +48,33 @@ function makeChapterCardTable(chapterInfo) {
     return table.append(tableBody);
 }
 
+// 로컬에서 테스트할 때를 위해 명시적으로 깃허브 서버에서 리소스 가져옴
+function resourceURL(resourcePath) {
+    return "https://doodle0.github.io/mmac/" + resourcePath;
+}
+
+function onNavItemClick(e) {
+    $("#chapter-nav .active").removeClass("active");
+    $(e).addClass("active");
+}
+
 function problemPageScript(problemDataFile) {
-    $.getJSON("resources/" + problemDataFile, function(problemData) {
+    $.getJSON(resourceURL("resources/" + problemDataFile), function(problemData) {
         if (!problemData) return;
 
         let mainContainer = $("#main-container");
 
         // 상단 nav 만들기
-        let chapterNav = $('<ul id="chapter-nav" class="nav nav-pills justify-content-around">');
+        let chapterNav = $('<ul id="chapter-nav" class="nav nav-tabs justify-content-around">');
         mainContainer.append(chapterNav);
 
         for (let chapter of problemData) {
-            console.log(chapter)
             // 내비게이션에 챕터 제목 추가
             chapterNav.append(
                 $('<li class="nav-item">').append(
                     $('<a class="nav-link">')
                         .attr("href", "#" + chapter.chapter_id)
+                        .attr("onclick", "onNavItemClick(this)")
                         .text(chapter.chapter_name)
                 )
             );
@@ -82,9 +92,8 @@ function problemPageScript(problemDataFile) {
     });
 }
 
-// onLoad
-$(function() {
-    $.getJSON("resources/menus.json", function(menus) {
+$(document).ready(function() {
+    $.getJSON(resourceURL("resources/menus.json"), function(menus) {
         let sidebar = $("#sidebar-ul");
         for (let menu of menus) {
             sidebar.append(
