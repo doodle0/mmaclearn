@@ -3,8 +3,7 @@
 <title>명문학원</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -13,51 +12,64 @@
   href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@400;500&display=swap"
   rel="stylesheet">
 
+<script src="https://kit.fontawesome.com/f7d7de57c7.js" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" href="resources/style.css">
 
 <body>
-  <nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card" style="z-index:3;width:250px;"
-    id="mySidebar">
-    <a class="w3-bar-item w3-button w3-border-bottom w3-large" href="index.html"><img
-        src="resources/u_mmac_logo_201311.gif" style="width:100%;"></a>
-    <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i
-        class="fa fa-remove"></i></a>
-  </nav>
-
-  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay">
-  </div>
-
-  <div class="w3-main" style="margin-left:250px;">
-
-    <div id="myTop" class="w3-container w3-top w3-theme w3-large">
-      <p><i class="fa fa-bars w3-button w3-theme w3-hide-large w3-xlarge" onclick="w3_open()"></i>
-        <span id="myIntro" class="w3-hide">명문학원</span>
-      </p>
-    </div>
-
-    <header class="w3-container w3-theme" style="padding:64px 32px">
-      <h1 id="myHeader" class="w3-xxlarge">명문학원</h1>
-    </header>
-
-    <div id="main-container" class="w3-container" style="padding:32px">
-      <div class="w3-bar w3-theme-l4">
-        <button class="w3-bar-item w3-button w3-hover-theme w3-mobile" onclick="location.href='begin.html'">초급반</button>
-        <button class="w3-bar-item w3-button w3-hover-theme w3-mobile" onclick="location.href='algo.html'">알고리즘</button>
-        <button class="w3-bar-item w3-button w3-hover-theme w3-mobile" onclick="location.href='python.html'">파이썬</button>
-        <button class="w3-bar-item w3-button w3-hover-theme w3-mobile" onclick="location.href='https://drive.google.com/drive/folders/1AKzLbQDBmO5GXQyddUQEs0b3nIKk_-9b?usp=sharing'">참고자료</button>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- sidebar (large) -->
+      <div class="d-none d-md-block sticky-top vh-100 col-auto px-2 overflow-auto bg-light shadow-sm">
+        <nav id="sidebar-lg" class="d-flex flex-column">
+          <a class="mx-auto" href="index.html"><img src="resources/u_mmac_logo_201311.gif" style="max-width: 240px;"></a>
+          <hr>
+          <ul id="sidebar-lg-ul" class="nav nav-pills flex-column mb-auto">
+          </ul>
+        </nav>
       </div>
+
+      <!-- main -->
+      <main class="col px-0">
+        <div class="d-none d-md-block container-fluid bg-light p-5"><h1 id="heading-lg">명문학원</h1></div>
+
+        <div id="header-area" class="d-md-none sticky-top flex-grow-1 bg-light shadow-sm">
+          <!-- sidebar (small) -->
+          <nav id="sidebar" class="d-flex flex-row align-items-center justify-content-between sticky-top bg-light p-3">
+            <div class="dropdown">
+              <button class="btn btn-outline-dark dropdown-toggle m-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                <i class="fas fa-bars"></i>
+              </button>
+              <ul id="sidebar-ul" class="nav-pills dropdown-menu"></ul>
+            </div>
+            <div class="d-md-none container-fluid"><h1 id="heading">명문학원</h1></div>
+          </nav>
+        </div>
+
+        <div id="main-container" class="container-lg">
+          <div class="card card-default shadow-sm my-4" id="ch-for">
+            <div class="card-header"><h3 class="m-0">링크</h3></div>
+            <div class="card-body">
+              <div class="btn-group mx-auto" role="group">
+                <button type="button" class="btn btn-outline-primary">초급반</button>
+                <button type="button" class="btn btn-outline-primary">알고리즘</button>
+                <button type="button" class="btn btn-outline-primary">파이썬</button>
+                <button type="button" class="btn btn-outline-primary">참고자료</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      
+      <script src="page_script.js"></script>
     </div>
-
-    <footer class="w3-container w3-theme" style="padding:32px">
-      <p>Footer information goes here</p>
-    </footer>
-
   </div>
 
-  <script src="page_script.js"></script>
-
+  <div class="position-fixed bottom-0 end-0">
+    <button type="button" id="to-top-btn" class="btn btn-primary d-none m-3"><i class="fa fa-chevron-up"></i>&nbsp;top</button>
+  </div>
 </body>
 
 </html>

@@ -66,7 +66,7 @@ function problemPageScript(problemDataFile) {
 
         // 상단 nav 만들기
         let chapterNav = $('<ul id="chapter-nav" class="nav nav-tabs justify-content-around">');
-        mainContainer.append(chapterNav);
+        mainContainer.before(chapterNav);
 
         for (let chapter of problemData) {
             // 내비게이션에 챕터 제목 추가
@@ -86,38 +86,63 @@ function problemPageScript(problemDataFile) {
                     .append(makeChapterCardHeader(chapter))
                     .append(makeChapterCardBody(chapter))
                     .append(makeChapterCardTable(chapter))
-            
+
             mainContainer.append(chapterCard);
         }
+        
+        // 앵커가 헤더에 가려지지 않게 스크롤 위치 수정
+        $('#chapter-nav .nav-link').click(function() {
+            var divId = $(this).attr('href');
+            $('html, body').animate({ scrollTop: $(divId).offset().top - $('#header-area').height() }, 100);
+        });
     });
 }
 
 $(document).ready(function() {
     $.getJSON(resourceURL("resources/menus.json"), function(menus) {
-        let sidebar = $("#sidebar-ul");
+        let sidebar = $("#sidebar-ul, #sidebar-lg-ul");
         for (let menu of menus) {
-            sidebar.append(
-                $("<li>").append(
-                     $('<a>')
-                        .addClass(
-                            window.location.pathname.endsWith(menu.link)
-                                ? "nav-link active"
-                                : "nav-link link-dark"
-                        )
-                        .attr("href", menu.link)
-                        .text(menu.menu_name)
-                )
-            );
+            // 구분선일 때
+            if (menu.type == "hr") {
+                sidebar.append($('<li class="my-1">'));
+            }
+            // 실제 메뉴일 때
+            else {
+                sidebar.append(
+                    $("<li>").append(
+                        $('<a>')
+                            .addClass(
+                                window.location.pathname.endsWith(menu.link)
+                                    ? "nav-link active"
+                                    : "nav-link link-dark"
+                            )
+                            .attr("href", menu.link)
+                            .text(menu.menu_name)
+                    )
+                );
 
-            // i가 현재 페이지를 가리키는 메뉴일 때
-            // TODO: 제대로 고치기
-            if (window.location.pathname.endsWith(menu.link)) {
-                $("h1").text($("h1").text() + " - " + menu.menu_name);
-                document.title += " - " + menu.menu_name;
-                if (menu.problem_data) {
-                    problemPageScript(menu.problem_data);
+                // i가 현재 페이지를 가리키는 메뉴일 때
+                // TODO: 제대로 고치기
+                if (window.location.pathname.endsWith(menu.link)) {
+                    $("#heading, #heading-lg").text($("#heading").text() + " - " + menu.menu_name);
+                    document.title += " - " + menu.menu_name;
+                    if (menu.problem_data) {
+                        problemPageScript(menu.problem_data);
+                    }
                 }
             }
+        }
+    });
+
+    // 맨 위로 가기 버튼
+    $('#to-top-btn').click(function() {
+        $('html, body').animate({ scrollTop: 0 }, 100);
+    });
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+            $("#to-top-btn").removeClass('d-none');
+        } else {
+            $("#to-top-btn").addClass('d-none');
         }
     });
 });

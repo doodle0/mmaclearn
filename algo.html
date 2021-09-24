@@ -21,33 +21,43 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <!-- sidebar -->
-      <div class="sticky-top vh-md-100 col-md-auto flex-grow-md-1 px-0 px-md-2 bg-light shadow-sm" style="z-index: 1000;">
-        <nav id="sidebar" class="d-flex flex-column sticky-top">
-          <div class="d-flex flex-row">
-            <a class="mx-auto" href="index.html"><img src="resources/u_mmac_logo_201311.gif" style="width:100%; max-width: 240px;"></a>
-            <a class="btn btn-primary" data-bs-toggle="collapse" href="#sidebar-wrapper" role="button" aria-expanded="false" aria-controls="collapseExample">
-              <i class="fas fa-bars"></i>
-            </a>
-          <div>
-          <div id="sidebar-wrapper" class="collapse">
-            <hr class="d-none d-md-block">
-            <ul id="sidebar-ul" class="nav nav-pills flex-column mb-auto">
-          </div>
+      <!-- sidebar (large) -->
+      <div class="d-none d-md-block sticky-top vh-100 col-auto px-2 overflow-auto bg-light shadow-sm">
+        <nav id="sidebar-lg" class="d-flex flex-column">
+          <a class="mx-auto" href="index.html"><img src="resources/u_mmac_logo_201311.gif" style="max-width: 240px;"></a>
+          <hr>
+          <ul id="sidebar-lg-ul" class="nav nav-pills flex-column mb-auto">
           </ul>
         </nav>
       </div>
 
       <!-- main -->
       <main class="col px-0">
-        <div class="container-fluid bg-light p-5"><h1>명문학원</h1></div>
+        <div class="d-none d-md-block container-fluid bg-light p-5"><h1 id="heading-lg">명문학원</h1></div>
 
-        <div id="main-container" class="container-lg" style="padding:32px">
+        <div id="header-area" class="d-md-none sticky-top flex-grow-1 bg-light shadow-sm">
+          <!-- sidebar (small) -->
+          <nav id="sidebar" class="d-flex flex-row align-items-center justify-content-between sticky-top bg-light p-3">
+            <div class="dropdown">
+              <button class="btn btn-outline-dark dropdown-toggle m-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                <i class="fas fa-bars"></i>
+              </button>
+              <ul id="sidebar-ul" class="nav-pills dropdown-menu"></ul>
+            </div>
+            <div class="d-md-none container-fluid"><h1 id="heading">명문학원</h1></div>
+          </nav>
+        </div>
+
+        <div id="main-container" class="container-lg">
         </div>
       </main>
       
       <script src="page_script.js"></script>
     </div>
+  </div>
+
+  <div class="position-fixed bottom-0 end-0">
+    <button type="button" id="to-top-btn" class="btn btn-primary d-none m-3"><i class="fa fa-chevron-up"></i>&nbsp;top</button>
   </div>
 </body>
 
