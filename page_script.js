@@ -35,7 +35,7 @@ function makeChapterCardTable(chapterInfo) {
         let problem = chapterInfo.chapter_problems[pi];
         tableBody.append(
             $('<tr>')
-                .append($('<td>').text(pi))
+                .append($('<td>').text(pi + 1))
                 .append(
                     $('<td>').append(
                         $('<a>').attr("href", problem.link).text(problem.name)
