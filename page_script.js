@@ -112,7 +112,7 @@ $(document).ready(function() {
                     $("<li>").append(
                         $('<a>')
                             .addClass(
-                                window.location.pathname.endsWith(menu.link)
+                                window.location.pathname.endsWith(menu.link) || (menu.menu_id == "home" && window.location.pathname.endsWith("/"))
                                     ? "nav-link active"
                                     : "nav-link link-dark"
                             )
