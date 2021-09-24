@@ -104,7 +104,7 @@ $(document).ready(function() {
         for (let menu of menus) {
             // 구분선일 때
             if (menu.type == "hr") {
-                sidebar.append($('<li class="my-1">'));
+                sidebar.append($('<li class="my-1 border-top">'));
             }
             // 실제 메뉴일 때
             else {
