@@ -5,7 +5,7 @@
         "menu_name": "홈",
         "link": "index.html"
     },
-    { "type": "hr"},
+    { "type": "divider"},
     {
         "type": "menu",
         "menu_id": "begin",
@@ -27,7 +27,7 @@
         "link": "python.html",
         "problem_data": "python_data.json"
     },
-    { "type": "hr"},
+    { "type": "divider"},
     {
         "type": "menu",
         "menu_id": "ref",
