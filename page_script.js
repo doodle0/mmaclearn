@@ -65,12 +65,19 @@ function problemPageScript(problemDataFile) {
         let mainContainer = $("#main-container");
 
         // 챔터 내비게이션 만들기
-        let chapterNav = $('<ul id="chapter-nav" class="nav nav-tabs justify-content-around">');
-        mainContainer.before(chapterNav);
+        let chapterNav = $('<nav id="chapter-nav" class="nav nav-pills sticky-md-top">');
+        let chapterNavListWrapper = $('<nav id="chapter-nav-list-wrapper" class="overflow-auto">').css("height", "inherit");
+        let chapterNavList = $('<ul class="nav nav-pills flex-md-column justify-content-around">');
+        // 상단 내비게이션 바와 겹치지 않게 수정 (내비게이션 바의 높이가 변하지 않는다고 가정)
+        chapterNav.css("height", "calc(" + "100vh - " + $('#navbar').outerHeight() + "px)");
+        chapterNav.css("padding-top", $('#navbar').outerHeight() + "px");
+        chapterNav.css("margin-top", "-" + $('#navbar').outerHeight() + "px");
+        chapterNav.append(chapterNavList);
+        $('#chapter-nav-area').append(chapterNav.append(chapterNavListWrapper.append(chapterNavList)));
 
         for (let chapter of problemData) {
             // 내비게이션에 챕터 제목 추가
-            chapterNav.append(
+            chapterNavList.append(
                 $('<li class="nav-item">').append(
                     $('<a class="nav-link">')
                         .attr("href", "#" + chapter.chapter_id)
@@ -109,7 +116,7 @@ $(document).ready(function() {
             // 실제 메뉴일 때
             else {
                 navbar.append(
-                    $("<li>").append(
+                    $('<li class="px-1 px-md-0">').append(
                         $('<a>')
                             .addClass(
                                 window.location.pathname.endsWith(menu.link) || (menu.menu_id == "home" && window.location.pathname.endsWith("/"))
