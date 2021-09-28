@@ -65,15 +65,17 @@ function problemPageScript(problemDataFile) {
         let mainContainer = $("#main-container");
 
         // 챔터 내비게이션 만들기
-        let chapterNav = $('<nav id="chapter-nav" class="nav nav-pills sticky-md-top">');
-        let chapterNavListWrapper = $('<nav id="chapter-nav-list-wrapper" class="overflow-auto">').css("height", "inherit");
+        let chapterNav = $('<div id="chapter-nav" class="nav nav-pills sticky-md-top flex-column">');
+        let chapterNavInner = $('<nav id="chapter-nav-inner" class="overflow-auto">');
         let chapterNavList = $('<ul class="nav nav-pills flex-md-column justify-content-around">');
+        
         // 상단 내비게이션 바와 겹치지 않게 수정 (내비게이션 바의 높이가 변하지 않는다고 가정)
-        chapterNav.css("height", "calc(" + "100vh - " + $('#navbar').outerHeight() + "px)");
         chapterNav.css("padding-top", $('#navbar').outerHeight() + "px");
         chapterNav.css("margin-top", "-" + $('#navbar').outerHeight() + "px");
+        chapterNavInner.css("height", "calc(" + "100vh - " + $('#navbar').outerHeight() + "px)");
+
         chapterNav.append(chapterNavList);
-        $('#chapter-nav-area').append(chapterNav.append(chapterNavListWrapper.append(chapterNavList)));
+        $('#chapter-nav-area').append(chapterNav.append(chapterNavInner.append(chapterNavList)));
 
         for (let chapter of problemData) {
             // 내비게이션에 챕터 제목 추가
