@@ -63,22 +63,22 @@
 ```js
 [
     {
-        "chapter_id": "ch-recursion",                   # 챕터 고유 ID
-        "chapter_name": "재귀",                         # 챕터 제목
-        "chapter_description": "재귀 및 백트래킹",      # (선택적) 챕터 설명
-        "chapter_concepts": [                           # 챕터 개념 설명 문서 리스트
-                                                        # (리스트 안의 내용물은 선택적)
+        "chapter_id": "ch-recursion",                   // 챕터 고유 ID
+        "chapter_name": "재귀",                         // 챕터 제목
+        "chapter_description": "재귀 및 백트래킹",      // (선택적) 챕터 설명
+        "chapter_concepts": [                           // 챕터 개념 설명 문서 리스트
+                                                        // (리스트 안의 내용물은 선택적)
             {
-                "concept_title": "재귀 개념",           # 개념 문서 이름
-                "link": "http://..."                    # 개념 문서 링크
+                "concept_title": "재귀 개념",           // 개념 문서 이름
+                "link": "http://..."                    // 개념 문서 링크
             },
             ...
         ],
-        "chapter_problems": [                   # 문제 리스트
+        "chapter_problems": [                   // 문제 리스트
             {
-                "from": "더블릿",               # 문제 출처
-                "name": "x의 y거듭제곱",        # 문제 이름
-                "link": "http://..."            # 문제 링크
+                "from": "더블릿",               // 문제 출처
+                "name": "x의 y거듭제곱",        // 문제 이름
+                "link": "http://..."            // 문제 링크
             },
             ...
         ]
