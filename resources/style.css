@@ -1,3 +1,19 @@
 body,h1,h2,h3,h4,h5,h6 {
     font-family: "Noto Sans KR", sans-serif
 }
+
+#chapter-nav {
+    /* 상단 내비게이션 바와 겹치지 않게 수정 */
+    padding-top: 64px;
+    margin-top: -64px;
+}
+
+@media (min-width: 768px) {
+    #navbar-inner {
+        height: 48px;
+    }
+
+    #chapter-nav-inner {
+        height: calc(100vh - 64px);
+    }
+}
