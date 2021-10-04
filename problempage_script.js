@@ -53,7 +53,7 @@ function onNavItemClick(e) {
     $(e).addClass("active");
 }
 
-function problemPageScript(problemDataFile) {
+function problemPageScript(pageName, problemDataFile) {
     $.getJSON(resourceURL("resources/" + problemDataFile), function(problemData) {
         if (!problemData) return;
 
@@ -68,6 +68,11 @@ function problemPageScript(problemDataFile) {
             )
         );
 
+        $("#chapter-nav-list").append(
+            $('<li class="nav-item mx-auto my-3">').append(
+                $('<h5 class="m-0">').text(pageName)
+            )
+        );
         for (let chapter of problemData) {
             // 내비게이션에 챕터 제목 추가
             $("#chapter-nav-list").append(

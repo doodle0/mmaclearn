@@ -40,7 +40,7 @@ $(document).ready(function() {
         document.title += " - " + menus[currMenuId].name;
         $("#subtitle").text(menus[currMenuId].name);
         if (menus[currMenuId].problem_data) {
-            problemPageScript(menus[currMenuId].problem_data);
+            problemPageScript(menus[currMenuId].name, menus[currMenuId].problem_data);
         } else if (currMenuId == "home") {
             homePageScript(menuLayout, menus, currMenuId);
         }

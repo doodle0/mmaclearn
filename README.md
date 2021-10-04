@@ -16,16 +16,15 @@
 │   ├── resources           # 문서에 첨부할 리소스 (사진)
 │   └── ...
 ├── resources               # 페이지 표시에 필요한 리소스 (사진, CSS, JSON, ...)
-│   ├── menus.json          # 사이드바 메뉴 표시에 필요한 정보
+│   ├── menus.json          # 각 메뉴에 대한 정보
+│   ├── menu_layout.json    # 상단 메뉴바 표시에 필요한 정보
 │   ├── begin_data.json     # 초급반 문제 정보 JSON 파일
 │   ├── algo_data.json
 │   ├── python_data.json
 │   ├── style.css           # 기타 CSS
 │   └── ...
 ├── index.html              # 홈페이지
-├── begin.html              # 초급반 페이지
-├── algo.html               # 알고리즘반 페이지
-├── python.html             # 파이썬반 페이지
+├── problempage.html        # 문제 표시 페이지
 └── ...
 ```
 
@@ -36,27 +35,32 @@
 
 ### ./resources/menus.json
 
-사이드바 메뉴를 표시하기 위한 정보를 저장하는 JSON 파일입니다. 이 파일은 단 하나만 존재하며, 다음과 같은 구조로 되어 있습니다. 학원 홈페이지에 새로운 메뉴를 추가하고 싶으면 이 JSON 파일에 새 항목을 추가하면 됩니다.
+각 메뉴에 대한 정보를 저장하는 JSON 파일입니다. 이 파일은 단 하나만 존재하며, 다음과 같은 구조로 되어 있습니다. 학원 홈페이지에 새로운 메뉴를 추가하고 싶으면 이 JSON 파일에 새 항목을 추가하면 됩니다.
 
-```
+```js
 [
-    {
-        "menu_id": "begin",                 # 메뉴 고유 ID
-        "menu_name": "초급반",              # 사이드바와 페이지 상단에 표시되는 메뉴 이름
-        "link": "begin.html",               # 메뉴를 눌렀을 때 연결되는 링크
-        "problem_data": "begin_data.json"   # (선택적) 문제 정보 JSON 파일명
+    "begin": {                                      // 메뉴 고유 ID
+        "name": "초급반",                           // 사이드바와 페이지 상단에 표시되는 메뉴 이름
+        "link": "problempage.html?class=begin",     // 메뉴를 눌렀을 때 연결되는 링크
+        "problem_data": "begin_data.json"           // (선택적) 문제 정보 JSON 파일명
     },
     ...
 ]
 ```
 
-**참고:** problem_data가 없을 경우 해당 페이지에 문제가 자동으로 표시되지 않습니다.
+### ./resources/menu_layout_.json
+
+사이트 상단 메뉴바에서 메뉴를 어떻게 표시할지를 정하는 파일입니다. `"-"`는 구분선을 의미합니다.
+
+```js
+[ "home", "-", "begin", "algo", "python", "-", "ref" ]
+```
 
 ### ./resources/*_data.json (문제 정보 JSON 파일)
 
 초급반, 알고리즘반 등의 페이지에서 각 챕터마다 개념과 문제를 저장하는 JSON 파일입니다.
 
-```
+```js
 [
     {
         "chapter_id": "ch-recursion",                   # 챕터 고유 ID
