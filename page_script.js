@@ -1,3 +1,5 @@
+const menuLayout = [ "home", "-", "begin", "algo", "python", "-", "ref" ];
+    
 function makeChapterCardHeader(chapterInfo) {
     let row = $('<div class="row">').append(
         $('<h3 class="col-auto m-0">')
@@ -16,7 +18,7 @@ function makeChapterCardBody(chapterInfo) {
     let body = $('<div class="card-body">');
     for (let concept of chapterInfo.chapter_concepts) {
         body.append(
-            $('<a class="btn btn-outline-primary mx-1" role="button">')
+            $('<a class="btn btn-outline-primary m-1" role="button">')
                 .attr("href", concept.link)
                 .append('<i class="far fa-file">')
                 .append("&nbsp;" + concept.concept_title)
@@ -102,12 +104,21 @@ function problemPageScript(problemDataFile) {
     });
 }
 
+function getMenuIdOfCurrPage(menus) {
+    if (window.location.pathname.endsWith("problempage.html")) {
+        return new URLSearchParams(window.location.search).get("class");
+    }
+    return "home";
+}
+
 $(document).ready(function() {
     $.getJSON(resourceURL("resources/menus.json"), function(menus) {
+        let currMenuId = getMenuIdOfCurrPage(menus);
         let navbar = $("#navbar-ul, #navbar-lg-ul");
-        for (let menu of menus) {
+        for (let menuId of menuLayout) {
+            console.log(menuId);
             // 구분선일 때
-            if (menu.type == "divider" || menu.type == "hr") {
+            if (menuId == "-") {
                 navbar.append($('<li class="my-1 mx-1 border-top border-start">'));
             }
             // 실제 메뉴일 때
@@ -116,26 +127,21 @@ $(document).ready(function() {
                     $('<li class="px-1 px-md-0">').append(
                         $('<a>')
                             .addClass(
-                                window.location.pathname.endsWith(menu.link) || (menu.menu_id == "home" && window.location.pathname.endsWith("/"))
+                                menuId == currMenuId
                                     ? "nav-link active"
                                     : "nav-link link-dark"
                             )
-                            .attr("href", menu.link)
-                            .text(menu.menu_name)
+                            .attr("href", menus[menuId].link)
+                            .text(menus[menuId].name)
                     )
                 );
-
-                // i가 현재 페이지를 가리키는 메뉴일 때
-                // TODO: 제대로 고치기
-                if (window.location.pathname.endsWith(menu.link)) {
-                    // $("#heading, #heading-lg").text($("#heading").text() + " - " + menu.menu_name);
-                    document.title += " - " + menu.menu_name;
-                    $("#subtitle").text(menu.menu_name);
-                    if (menu.problem_data) {
-                        problemPageScript(menu.problem_data);
-                    }
-                }
             }
+        }
+    
+        document.title += " - " + menus[currMenuId].name;
+        $("#subtitle").text(menus[currMenuId].name);
+        if (menus[currMenuId].problem_data) {
+            problemPageScript(menus[currMenuId].problem_data);
         }
     });
 

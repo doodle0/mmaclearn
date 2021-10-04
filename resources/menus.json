@@ -1,37 +1,25 @@
-[
-    {
-        "type": "menu",
-        "menu_id": "home",
-        "menu_name": "홈",
+{
+    "home": {
+        "name": "홈",
         "link": "index.html"
     },
-    { "type": "divider"},
-    {
-        "type": "menu",
-        "menu_id": "begin",
-        "menu_name": "초급반",
-        "link": "begin.html",
+    "begin": {
+        "name": "초급반",
+        "link": "problempage.html?class=begin",
         "problem_data": "begin_data.json"
     },
-    {
-        "type": "menu",
-        "menu_id": "algo",
-        "menu_name": "알고리즘",
-        "link": "algo.html",
+    "algo": {
+        "name": "알고리즘",
+        "link": "problempage.html?class=algo",
         "problem_data": "algo_data.json"
     },
-    {
-        "type": "menu",
-        "menu_id": "python",
-        "menu_name": "파이썬",
-        "link": "python.html",
+    "python": {
+        "name": "파이썬",
+        "link": "problempage.html?class=python",
         "problem_data": "python_data.json"
     },
-    { "type": "divider"},
-    {
-        "type": "menu",
-        "menu_id": "ref",
-        "menu_name": "참고자료",
+    "ref": {
+        "name": "참고자료",
         "link": "https://drive.google.com/drive/folders/1AKzLbQDBmO5GXQyddUQEs0b3nIKk_-9b?usp=sharing"
     }
-]
+}
