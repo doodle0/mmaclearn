@@ -1,5 +1,3 @@
-const menuLayout = [ "home", "-", "begin", "algo", "python", "-", "ref" ];
-    
 function makeChapterCardHeader(chapterInfo) {
     let row = $('<div class="row">').append(
         $('<h3 class="col-auto m-0">')
@@ -104,7 +102,7 @@ function problemPageScript(problemDataFile) {
     });
 }
 
-function getMenuIdOfCurrPage(menus) {
+function getMenuIdOfCurrPage() {
     if (window.location.pathname.endsWith("problempage.html")) {
         return new URLSearchParams(window.location.search).get("class");
     }
@@ -112,11 +110,11 @@ function getMenuIdOfCurrPage(menus) {
 }
 
 $(document).ready(function() {
+    $.getJSON(resourceURL("resources/menu_layout.json"), function(menuLayout) {
     $.getJSON(resourceURL("resources/menus.json"), function(menus) {
-        let currMenuId = getMenuIdOfCurrPage(menus);
+        let currMenuId = getMenuIdOfCurrPage();
         let navbar = $("#navbar-ul, #navbar-lg-ul");
         for (let menuId of menuLayout) {
-            console.log(menuId);
             // 구분선일 때
             if (menuId == "-") {
                 navbar.append($('<li class="my-1 mx-1 border-top border-start">'));
@@ -143,7 +141,7 @@ $(document).ready(function() {
         if (menus[currMenuId].problem_data) {
             problemPageScript(menus[currMenuId].problem_data);
         }
-    });
+    });});
 
     // 맨 위로 가기 버튼
     $('#to-top-btn').click(function() {
