@@ -16,4 +16,8 @@ body,h1,h2,h3,h4,h5,h6 {
     #chapter-nav-inner {
         height: calc(100vh - 64px);
     }
+
+    #chapter-nav-area {
+        width: 240px;
+    }
 }

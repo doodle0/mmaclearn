@@ -69,7 +69,7 @@ function problemPageScript(pageName, problemDataFile) {
         );
 
         $("#chapter-nav-list").append(
-            $('<li class="nav-item mx-auto my-3">').append(
+            $('<li class="nav-item d-none d-md-block mx-auto my-3">').append(
                 $('<h5 class="m-0">').text(pageName)
             )
         );
