@@ -130,6 +130,7 @@ $(document).ready(function() {
                 if (window.location.pathname.endsWith(menu.link)) {
                     // $("#heading, #heading-lg").text($("#heading").text() + " - " + menu.menu_name);
                     document.title += " - " + menu.menu_name;
+                    $("#subtitle").text(menu.menu_name);
                     if (menu.problem_data) {
                         problemPageScript(menu.problem_data);
                     }
