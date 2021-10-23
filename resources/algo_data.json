@@ -29,7 +29,7 @@
   {
     "chapter_id": "ch-recursion",
     "chapter_name": "재귀",
-    "chapter_description": "재귀 및 백트래킹",
+    "chapter_description": "재귀, 재귀를 사용한 브루트포스",
     "chapter_concepts": [
       {
         "concept_title": "재귀 개념",
@@ -346,7 +346,7 @@
   {
     "chapter_id": "ch-tree",
     "chapter_name": "트리",
-    "chapter_description": "트리, 이진트리, 힙, Union-Find",
+    "chapter_description": "트리, 이진 트리, 힙, Union-Find",
     "chapter_concepts": [
       {
         "concept_title": "트리 개념",
@@ -412,7 +412,7 @@
   {
     "chapter_id": "ch-graph2",
     "chapter_name": "그래프 2",
-    "chapter_description": "최단경로, 위상정렬, MST",
+    "chapter_description": "최단 경로, 위상 정렬, 최소 스패닝 트리",
     "chapter_concepts": [],
     "chapter_problems": [
       {
@@ -464,7 +464,8 @@
   },
   {
     "chapter_id": "ch-backtracking",
-    "chapter_name": "백트래킹 2",
+    "chapter_name": "백트래킹",
+    "chapter_description": "브루트포스/백트래킹 부류 알고리즘",
     "chapter_concepts": [],
     "chapter_problems": [
       {
@@ -484,13 +485,13 @@
       },
       {
         "from": "백준",
-        "name": "스도쿠",
-        "link": "https://www.acmicpc.net/problem/2580"
+        "name": "N-Queen",
+        "link": "https://www.acmicpc.net/problem/9663"
       },
       {
         "from": "백준",
-        "name": "N-Queen",
-        "link": "https://www.acmicpc.net/problem/9663"
+        "name": "스도쿠",
+        "link": "https://www.acmicpc.net/problem/2580"
       },
       {
         "from": "백준",
