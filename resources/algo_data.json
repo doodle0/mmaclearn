@@ -259,6 +259,11 @@
       },
       {
         "from": "백준",
+        "name": "연결 요소의 개수",
+        "link": "https://www.acmicpc.net/problem/11724"
+      },
+      {
+        "from": "백준",
         "name": "섬의 개수",
         "link": "https://www.acmicpc.net/problem/4963"
       },
@@ -417,7 +422,7 @@
   {
     "chapter_id": "ch-graph2",
     "chapter_name": "그래프 2",
-    "chapter_description": "최단 경로, 위상 정렬, 최소 스패닝 트리",
+    "chapter_description": "최단 경로, 위상 정렬, 최소 스패닝 트리, etc...",
     "chapter_concepts": [],
     "chapter_problems": [
       {
@@ -464,6 +469,11 @@
         "from": "백준",
         "name": "우주신과의 교감",
         "link": "https://www.acmicpc.net/problem/1774"
+      },
+      {
+        "from": "백준",
+        "name": "이분 그래프",
+        "link": "https://www.acmicpc.net/problem/1707"
       }
     ]
   },
