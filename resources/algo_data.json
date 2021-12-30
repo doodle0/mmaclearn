@@ -630,8 +630,18 @@
       },
       {
         "from": "백준",
-        "name": "최솟값과 최댓값",
-        "link": "https://www.acmicpc.net/problem/2357"
+        "name": "최솟값",
+        "link": "https://www.acmicpc.net/problem/10868"
+      },
+      {
+        "from": "백준",
+        "name": "수열과 쿼리 17",
+        "link": "https://www.acmicpc.net/problem/14438"
+      },
+      {
+        "from": "백준",
+        "name": "수열과 쿼리 16",
+        "link": "https://www.acmicpc.net/problem/14428"
       },
       {
         "from": "백준",
