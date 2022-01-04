@@ -630,11 +630,6 @@
       },
       {
         "from": "백준",
-        "name": "최솟값",
-        "link": "https://www.acmicpc.net/problem/10868"
-      },
-      {
-        "from": "백준",
         "name": "수열과 쿼리 17",
         "link": "https://www.acmicpc.net/problem/14438"
       },
@@ -655,8 +650,8 @@
       },
       {
         "from": "백준",
-        "name": "중앙값 측정",
-        "link": "https://www.acmicpc.net/problem/9426"
+        "name": "사탕상자",
+        "link": "https://www.acmicpc.net/problem/2243"
       },
       {
         "from": "백준",
@@ -698,9 +693,9 @@
     ]
   },
   {
-    "chapter_id": "ch-lca",
-    "chapter_name": "LCA",
-    "chapter_description": "Sparse Table, LCA",
+    "chapter_id": "ch-tree2",
+    "chapter_name": "트리 2",
+    "chapter_description": "Sparse Table, LCA, 오일러 경로 테크닉(추가 예정)",
     "chapter_concepts": [],
     "chapter_problems": [
       {
@@ -732,6 +727,16 @@
         "from": "백준",
         "name": "트리와 쿼리 2",
         "link": "https://www.acmicpc.net/problem/13511"
+      },
+      {
+        "from": "백준",
+        "name": "회사 문화 3",
+        "link": "https://www.acmicpc.net/problem/14287"
+      },
+      {
+        "from": "백준",
+        "name": "회사 문화 2",
+        "link": "https://www.acmicpc.net/problem/14268"
       }
     ]
   },
