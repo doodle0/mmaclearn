@@ -650,6 +650,11 @@
       },
       {
         "from": "백준",
+        "name": "부분배열 고르기",
+        "link": "https://www.acmicpc.net/problem/2104"
+      },
+      {
+        "from": "백준",
         "name": "구간 합 구하기 2",
         "link": "https://www.acmicpc.net/problem/10999"
       }
