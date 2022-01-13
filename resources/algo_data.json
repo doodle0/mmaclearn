@@ -695,7 +695,7 @@
   {
     "chapter_id": "ch-tree2",
     "chapter_name": "트리 2",
-    "chapter_description": "Sparse Table, LCA, 오일러 경로 테크닉(추가 예정)",
+    "chapter_description": "Sparse Table, LCA, 오일러 경로 테크닉",
     "chapter_concepts": [],
     "chapter_problems": [
       {
@@ -737,6 +737,11 @@
         "from": "백준",
         "name": "주식회사 승범이네",
         "link": "https://www.acmicpc.net/problem/16404"
+      },
+      {
+        "from": "백준",
+        "name": "자동차 공장",
+        "link": "https://www.acmicpc.net/problem/2820"
       }
     ]
   },
