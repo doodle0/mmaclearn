@@ -394,6 +394,16 @@
       },
       {
         "from": "백준",
+        "name": "트리 순회",
+        "link": "https://www.acmicpc.net/problem/1991"
+      },
+      {
+        "from": "백준",
+        "name": "트리의 순회",
+        "link": "https://www.acmicpc.net/problem/2263"
+      },
+      {
+        "from": "백준",
         "name": "트리의 높이와 너비",
         "link": "https://www.acmicpc.net/problem/2250"
       },
@@ -444,6 +454,11 @@
         "from": "백준",
         "name": "줄 세우기",
         "link": "https://www.acmicpc.net/problem/2252"
+      },
+      {
+        "from": "백준",
+        "name": "음악프로그램",
+        "link": "https://www.acmicpc.net/problem/2623"
       },
       {
         "from": "백준",
@@ -540,13 +555,18 @@
   {
     "chapter_id": "ch-binsearch",
     "chapter_name": "이분 탐색",
-    "chapter_description": "이분 탐색, Parametric Search",
+    "chapter_description": "이분 탐색, Parametric Search, Meet in the Middle",
     "chapter_concepts": [],
     "chapter_problems": [
       {
         "from": "백준",
         "name": "수 찾기",
         "link": "https://www.acmicpc.net/problem/1920"
+      },
+      {
+        "from": "백준",
+        "name": "두 용액",
+        "link": "https://www.acmicpc.net/problem/2470"
       },
       {
         "from": "백준",
@@ -562,6 +582,11 @@
         "from": "백준",
         "name": "나무 자르기",
         "link": "https://www.acmicpc.net/problem/2805"
+      },
+      {
+        "from": "백준",
+        "name": "부분수열의 합 2",
+        "link": "https://www.acmicpc.net/problem/1208"
       }
     ]
   },
