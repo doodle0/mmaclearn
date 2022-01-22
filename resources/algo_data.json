@@ -356,7 +356,7 @@
   {
     "chapter_id": "ch-tree",
     "chapter_name": "트리",
-    "chapter_description": "트리, 이진 트리, 힙, Union-Find",
+    "chapter_description": "트리, 이진 트리, 힙",
     "chapter_concepts": [
       {
         "concept_title": "트리 개념",
