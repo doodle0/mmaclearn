@@ -406,16 +406,6 @@
         "from": "백준",
         "name": "최대 힙",
         "link": "https://www.acmicpc.net/problem/11279"
-      },
-      {
-        "from": "백준",
-        "name": "집합의 표현",
-        "link": "https://www.acmicpc.net/problem/1717"
-      },
-      {
-        "from": "백준",
-        "name": "여행 가자",
-        "link": "https://www.acmicpc.net/problem/1976"
       }
     ]
   },
@@ -613,9 +603,26 @@
     ]
   },
   {
+    "chapter_id": "ch-unionfind",
+    "chapter_name": "Union-Find",
+    "chapter_concepts": [],
+    "chapter_problems": [
+      {
+        "from": "백준",
+        "name": "집합의 표현",
+        "link": "https://www.acmicpc.net/problem/1717"
+      },
+      {
+        "from": "백준",
+        "name": "여행 가자",
+        "link": "https://www.acmicpc.net/problem/1976"
+      }
+    ]
+  },
+  {
     "chapter_id": "ch-segtree",
     "chapter_name": "세그먼트 트리",
-    "chapter_description": "세그먼트 트리, Lazy Propagation(추가예정)",
+    "chapter_description": "세그먼트 트리, Lazy Propagation",
     "chapter_concepts": [],
     "chapter_problems": [
       {
@@ -695,7 +702,7 @@
   {
     "chapter_id": "ch-tree2",
     "chapter_name": "트리 2",
-    "chapter_description": "Sparse Table, LCA, 오일러 경로 테크닉",
+    "chapter_description": "Sparse Table을 활용한 LCA 및 트리 쿼리",
     "chapter_concepts": [],
     "chapter_problems": [
       {
@@ -727,21 +734,6 @@
         "from": "백준",
         "name": "트리와 쿼리 2",
         "link": "https://www.acmicpc.net/problem/13511"
-      },
-      {
-        "from": "백준",
-        "name": "회사 문화 3",
-        "link": "https://www.acmicpc.net/problem/14287"
-      },
-      {
-        "from": "백준",
-        "name": "주식회사 승범이네",
-        "link": "https://www.acmicpc.net/problem/16404"
-      },
-      {
-        "from": "백준",
-        "name": "자동차 공장",
-        "link": "https://www.acmicpc.net/problem/2820"
       }
     ]
   },
@@ -817,6 +809,36 @@
     ]
   },
   {
+    "chapter_id": "ch-tree3",
+    "chapter_name": "트리 3",
+    "chapter_description": "오일러 경로 테크닉, HLD(추가예정)",
+    "chapter_concepts": [],
+    "chapter_problems": [
+      {
+        "from": "백준",
+        "name": "회사 문화 3",
+        "link": "https://www.acmicpc.net/problem/14287"
+      },
+      {
+        "from": "백준",
+        "name": "주식회사 승범이네",
+        "link": "https://www.acmicpc.net/problem/16404"
+      },
+      {
+        "from": "백준",
+        "name": "자동차 공장",
+        "link": "https://www.acmicpc.net/problem/2820"
+      }
+    ]
+  },
+  {
+    "chapter_id": "ch-dp3",
+    "chapter_name": "DP 3",
+    "chapter_description": "Convex Hull Trick, ...",
+    "chapter_concepts": [],
+    "chapter_problems": []
+  },
+  {
     "chapter_id": "ch-graph3",
     "chapter_name": "그래프 3",
     "chapter_description": "SCC, 이분 매칭, Network Flow, MCMF",
@@ -833,7 +855,6 @@
   {
     "chapter_id": "ch-etc",
     "chapter_name": "기타",
-    "chapter_description": "DP 최적화, HLD, ...",
     "chapter_concepts": [],
     "chapter_problems": []
   }
