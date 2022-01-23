@@ -467,6 +467,11 @@
       },
       {
         "from": "백준",
+        "name": "텀 프로젝트",
+        "link": "https://www.acmicpc.net/problem/9466"
+      },
+      {
+        "from": "백준",
         "name": "ACM Craft",
         "link": "https://www.acmicpc.net/problem/1005"
       },
