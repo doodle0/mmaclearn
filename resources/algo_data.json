@@ -188,6 +188,11 @@
       },
       {
         "from": "백준",
+        "name": "후위 표기식",
+        "link": "https://www.acmicpc.net/problem/1918"
+      },
+      {
+        "from": "백준",
         "name": "괄호의 값",
         "link": "https://www.acmicpc.net/problem/2504"
       }
