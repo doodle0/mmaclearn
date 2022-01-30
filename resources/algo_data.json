@@ -838,6 +838,11 @@
       },
       {
         "from": "백준",
+        "name": "볼록 껍질",
+        "link": "https://www.acmicpc.net/problem/1708"
+      },
+      {
+        "from": "백준",
         "name": "미술관",
         "link": "https://www.acmicpc.net/problem/10839"
       }
