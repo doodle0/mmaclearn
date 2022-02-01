@@ -99,13 +99,18 @@
   {
     "chapter_id": "ch-graph3",
     "chapter_name": "그래프 3",
-    "chapter_description": "SCC, 이분 매칭",
+    "chapter_description": "SCC, 2-SAT, 이분 매칭(추가예정)",
     "chapter_concepts": [],
     "chapter_problems": [
       {
         "from": "백준",
         "name": "Strongly Connected Component",
         "link": "https://www.acmicpc.net/problem/2150"
+      },
+      {
+        "from": "백준",
+        "name": "도미노",
+        "link": "https://www.acmicpc.net/problem/4196"
       },
       {
         "from": "백준",
