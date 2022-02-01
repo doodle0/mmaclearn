@@ -13,6 +13,11 @@
         "link": "problempage.html?class=algo",
         "problem_data": "algo_data.json"
     },
+    "advanced": {
+        "name": "알고리즘 고급",
+        "link": "problempage.html?class=advanced",
+        "problem_data": "advanced_data.json"
+    },
     "python": {
         "name": "파이썬",
         "link": "problempage.html?class=python",
