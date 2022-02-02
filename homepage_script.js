@@ -1,5 +1,5 @@
 function homePageScript(menuLayout, menus, currMenuId) {
-    let buttons = [["begin", "algo", "python"], "ref"];
+    let buttons = [["begin", "algo", "advanced", "python"], "ref"];
     let linkCardBody = $("#link-card-body");
     for (let bi of buttons) {
         if (typeof(bi) == "string") {
