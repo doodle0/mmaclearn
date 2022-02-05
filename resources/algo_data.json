@@ -388,6 +388,11 @@
         "link": "https://www.acmicpc.net/problem/11725"
       },
       {
+        "from": "백준",
+        "name": "트리와 쿼리",
+        "link": "https://www.acmicpc.net/problem/15681"
+      },
+      {
         "from": "더블릿",
         "name": "이진트리 방문 I",
         "link": "http://220.89.64.243/30stair/postorder/postorder.php?pname=postorder"

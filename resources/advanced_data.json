@@ -160,19 +160,9 @@
   {
     "chapter_id": "ch-dp3",
     "chapter_name": "DP 3",
-    "chapter_description": "그래프 및 트리에서의 DP",
+    "chapter_description": "트리 및 그래프에서의 DP",
     "chapter_concepts": [],
     "chapter_problems": [
-      {
-        "from": "백준",
-        "name": "ACM Craft",
-        "link": "https://www.acmicpc.net/problem/1005"
-      },
-      {
-        "from": "백준",
-        "name": "장난감 조립",
-        "link": "https://www.acmicpc.net/problem/2637"
-      },
       {
         "from": "백준",
         "name": "회사 문화 1",
@@ -182,6 +172,16 @@
         "from": "백준",
         "name": "사회망 서비스(SNS)",
         "link": "https://www.acmicpc.net/problem/2533"
+      },
+      {
+        "from": "백준",
+        "name": "장난감 조립",
+        "link": "https://www.acmicpc.net/problem/2637"
+      },
+      {
+        "from": "백준",
+        "name": "ACM Craft",
+        "link": "https://www.acmicpc.net/problem/1005"
       },
       {
         "from": "백준",
