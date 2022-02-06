@@ -241,7 +241,7 @@
   {
     "chapter_id": "ch-geom",
     "chapter_name": "기하",
-    "chapter_description": "좌표평면, CCW, Convex Hull(추가예정)",
+    "chapter_description": "CCW, 교차·내부 판정, Convex Hull, Rotating Calipers",
     "chapter_concepts": [],
     "chapter_problems": [
       {
@@ -256,6 +256,11 @@
       },
       {
         "from": "백준",
+        "name": "사과나무",
+        "link": "https://www.acmicpc.net/problem/2987"
+      },
+      {
+        "from": "백준",
         "name": "선분 교차 2",
         "link": "https://www.acmicpc.net/problem/17387"
       },
@@ -266,8 +271,23 @@
       },
       {
         "from": "백준",
+        "name": "고속도로",
+        "link": "https://www.acmicpc.net/problem/10254"
+      },
+      {
+        "from": "백준",
+        "name": "점 분리",
+        "link": "https://www.acmicpc.net/problem/3878"
+      },
+      {
+        "from": "백준",
         "name": "미술관",
         "link": "https://www.acmicpc.net/problem/10839"
+      },
+      {
+        "from": "백준",
+        "name": "넓이",
+        "link": "https://www.acmicpc.net/problem/1077"
       }
     ]
   },
@@ -297,7 +317,7 @@
   {
     "chapter_id": "ch-dp4",
     "chapter_name": "DP 4",
-    "chapter_description": "Convex Hull Trick, ...",
+    "chapter_description": "Convex Hull Trick, 슬라이딩 윈도우, 덱을 이용한 최적화, ...",
     "chapter_concepts": [],
     "chapter_problems": []
   },
