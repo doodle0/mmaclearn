@@ -1,6 +1,6 @@
 function makeChapterCardHeader(chapterInfo) {
     let row = $('<div class="row">').append(
-        $('<h3 class="col-auto m-0">')
+        $('<h4 class="col-auto m-0">')
             .text(chapterInfo.chapter_name)
     )
     if (chapterInfo.chapter_description) {

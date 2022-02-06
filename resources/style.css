@@ -8,6 +8,14 @@ body,h1,h2,h3,h4,h5,h6 {
     margin-top: -64px;
 }
 
+td {
+    padding: 0.35rem 0.5rem !important;
+}
+
+.card-body {
+    padding: 0.5rem !important;
+}
+
 @media (min-width: 768px) {
     #navbar-inner {
         height: 48px;
