@@ -643,6 +643,49 @@
     ]
   },
   {
+    "chapter_id": "ch-impl",
+    "chapter_name": "단순 구현",
+    "chapter_description": "유익한 단순 구현 문제",
+    "chapter_concepts": [],
+    "chapter_problems": [
+      {
+        "from": "백준",
+        "name": "참외밭",
+        "link": "https://www.acmicpc.net/problem/2477"
+      },
+      {
+        "from": "백준",
+        "name": "두 박스",
+        "link": "https://www.acmicpc.net/problem/15973"
+      },
+      {
+        "from": "백준",
+        "name": "크로아티아 알파벳",
+        "link": "https://www.acmicpc.net/problem/1316"
+      },
+      {
+        "from": "백준",
+        "name": "회문",
+        "link": "https://www.acmicpc.net/problem/17609"
+      },
+      {
+        "from": "백준",
+        "name": "회문은 회문아니야!!",
+        "link": "https://www.acmicpc.net/problem/15927"
+      },
+      {
+        "from": "백준",
+        "name": "2048 (Easy)",
+        "link": "https://www.acmicpc.net/problem/2941"
+      },
+      {
+        "from": "백준",
+        "name": "구슬 탈출 2",
+        "link": "https://www.acmicpc.net/problem/13460"
+      }
+    ]
+  },
+  {
     "chapter_id": "ch-etc",
     "chapter_name": "기타",
     "chapter_concepts": [],
