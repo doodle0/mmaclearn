@@ -1,6 +1,6 @@
 // 로컬에서 테스트할 때를 위해 명시적으로 깃허브 서버에서 리소스 가져옴
 function resourceURL(resourcePath) {
-    return "https://doodle0.github.io/mmac/" + resourcePath;
+    return resourcePath;
 }
 
 function getMenuIdOfCurrPage() {
