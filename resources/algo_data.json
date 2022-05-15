@@ -665,16 +665,6 @@
       },
       {
         "from": "백준",
-        "name": "회문",
-        "link": "https://www.acmicpc.net/problem/17609"
-      },
-      {
-        "from": "백준",
-        "name": "회문은 회문아니야!!",
-        "link": "https://www.acmicpc.net/problem/15927"
-      },
-      {
-        "from": "백준",
         "name": "2048 (Easy)",
         "link": "https://www.acmicpc.net/problem/12100"
       },
@@ -682,6 +672,29 @@
         "from": "백준",
         "name": "구슬 탈출 2",
         "link": "https://www.acmicpc.net/problem/13460"
+      }
+    ]
+  },
+  {
+    "chapter_id": "ch-logic",
+    "chapter_name": "논리",
+    "chapter_description": "유익한 논리 문제",
+    "chapter_concepts": [],
+    "chapter_problems": [
+      {
+        "from": "백준",
+        "name": "볼 모으기",
+        "link": "https://www.acmicpc.net/problem/17615"
+      },
+      {
+        "from": "백준",
+        "name": "회문",
+        "link": "https://www.acmicpc.net/problem/17609"
+      },
+      {
+        "from": "백준",
+        "name": "회문은 회문아니야!!",
+        "link": "https://www.acmicpc.net/problem/15927"
       }
     ]
   },
