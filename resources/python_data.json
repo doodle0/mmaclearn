@@ -212,8 +212,8 @@
       },
       {
         "from": "더블릿",
-        "name": "골드바하의 추측",
-        "link": "http://220.89.64.243/30stair/goldbach/goldbach.php?pname=goldbach"
+        "name": "골드바흐의 추측",
+        "link": "https://www.acmicpc.net/problem/6588"
       },
       {
         "from": "더블릿",
