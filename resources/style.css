@@ -8,6 +8,10 @@ body,h1,h2,h3,h4,h5,h6 {
     margin-top: -64px;
 }
 
+#navbar {
+    z-index: 1021 !important;
+}
+
 td {
     padding: 0.35rem 0.5rem !important;
 }
