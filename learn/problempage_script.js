@@ -92,7 +92,7 @@ function makeChapterNav(pageName, problemData) {
 }
 
 function problemPageScript(pageName, problemDataFile) {
-    $.getJSON("resources/" + problemDataFile, function(problemData) {
+    $.getJSON("/resources/" + problemDataFile, function(problemData) {
         if (!problemData) return;
 
         makeChapterNav(pageName, problemData);

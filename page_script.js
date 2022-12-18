@@ -8,10 +8,10 @@ function getMenuIdOfCurrPage() {
 $(document).ready(function() {
     $('#navbar')
         .addClass("navbar navbar-expand-md sticky-top navbar-light bg-light shadow-sm")
-        .load("elements/navbar.html");
+        .load("/elements/navbar.html");
 
-    $.getJSON("resources/menu_layout.json", function(menuLayout) {
-    $.getJSON("resources/menus.json", function(menus) {
+    $.getJSON("/resources/menu_layout.json", function(menuLayout) {
+    $.getJSON("/resources/menus.json", function(menus) {
         let currMenuId = getMenuIdOfCurrPage();
         let navbar = $("#navbar-ul, #navbar-lg-ul");
         for (let menuId of menuLayout) {
