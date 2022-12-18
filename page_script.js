@@ -1,8 +1,3 @@
-// 로컬에서 테스트할 때를 위해 명시적으로 깃허브 서버에서 리소스 가져옴
-function resourceURL(resourcePath) {
-    return resourcePath;
-}
-
 function getMenuIdOfCurrPage() {
     if (window.location.pathname.endsWith("problempage.html")) {
         return new URLSearchParams(window.location.search).get("class");
@@ -11,8 +6,12 @@ function getMenuIdOfCurrPage() {
 }
 
 $(document).ready(function() {
-    $.getJSON(resourceURL("resources/menu_layout.json"), function(menuLayout) {
-    $.getJSON(resourceURL("resources/menus.json"), function(menus) {
+    $('#navbar')
+        .addClass("navbar navbar-expand-md sticky-top navbar-light bg-light shadow-sm")
+        .load("elements/navbar.html");
+
+    $.getJSON("resources/menu_layout.json", function(menuLayout) {
+    $.getJSON("resources/menus.json", function(menus) {
         let currMenuId = getMenuIdOfCurrPage();
         let navbar = $("#navbar-ul, #navbar-lg-ul");
         for (let menuId of menuLayout) {

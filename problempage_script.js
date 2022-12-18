@@ -53,46 +53,49 @@ function onNavItemClick(e) {
     $(e).addClass("active");
 }
 
+// 챕터 내비게이션 만들기
+function makeChapterNav(pageName, problemData) {
+    let mainContainer = $("#main-container");
+
+    $('#chapter-nav-area').append(
+        $('<div id="chapter-nav" class="nav nav-pills sticky-md-top flex-column">').append(
+            $('<nav id="chapter-nav-inner" class="overflow-auto">').append(
+                $('<ul id="chapter-nav-list" class="nav nav-pills flex-md-column justify-content-around">')
+            )
+        )
+    );
+    $("#chapter-nav-list").append(
+        $('<li class="nav-item d-none d-md-block mx-auto my-3">').append(
+            $('<h5 class="m-0">').text(pageName)
+        )
+    );
+    for (let chapter of problemData) {
+        // 내비게이션에 챕터 제목 추가
+        $("#chapter-nav-list").append(
+            $('<li class="nav-item">').append(
+                $('<a class="nav-link">')
+                    .attr("href", "#" + chapter.chapter_id)
+                    .attr("onclick", "onNavItemClick(this)")
+                    .text(chapter.chapter_name)
+            )
+        );
+        // 챕처마다 카드 추가
+        let chapterCard =
+            $('<div class="card card-default shadow-sm my-4">')
+                .attr("id", chapter.chapter_id)
+                .append(makeChapterCardHeader(chapter))
+                .append(makeChapterCardBody(chapter))
+                .append(makeChapterCardTable(chapter))
+
+        mainContainer.append(chapterCard);
+    }
+}
+
 function problemPageScript(pageName, problemDataFile) {
-    $.getJSON(resourceURL("resources/" + problemDataFile), function(problemData) {
+    $.getJSON("resources/" + problemDataFile, function(problemData) {
         if (!problemData) return;
 
-        let mainContainer = $("#main-container");
-
-        // 챕터 내비게이션 만들기
-        $('#chapter-nav-area').append(
-            $('<div id="chapter-nav" class="nav nav-pills sticky-md-top flex-column">').append(
-                $('<nav id="chapter-nav-inner" class="overflow-auto">').append(
-                    $('<ul id="chapter-nav-list" class="nav nav-pills flex-md-column justify-content-around">')
-                )
-            )
-        );
-
-        $("#chapter-nav-list").append(
-            $('<li class="nav-item d-none d-md-block mx-auto my-3">').append(
-                $('<h5 class="m-0">').text(pageName)
-            )
-        );
-        for (let chapter of problemData) {
-            // 내비게이션에 챕터 제목 추가
-            $("#chapter-nav-list").append(
-                $('<li class="nav-item">').append(
-                    $('<a class="nav-link">')
-                        .attr("href", "#" + chapter.chapter_id)
-                        .attr("onclick", "onNavItemClick(this)")
-                        .text(chapter.chapter_name)
-                )
-            );
-            // 챕처마다 카드 추가
-            let chapterCard =
-                $('<div class="card card-default shadow-sm my-4">')
-                    .attr("id", chapter.chapter_id)
-                    .append(makeChapterCardHeader(chapter))
-                    .append(makeChapterCardBody(chapter))
-                    .append(makeChapterCardTable(chapter))
-
-            mainContainer.append(chapterCard);
-        }
+        makeChapterNav(pageName, problemData);
         
         // 앵커가 내비게이션 바에 가려지지 않게 스크롤 위치 수정
         $('#chapter-nav .nav-link').click(function() {
