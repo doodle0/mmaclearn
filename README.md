@@ -1,6 +1,6 @@
 # 명문학원
 
-명문학원 초/중급 및 기타 반 [홈페이지](https://doodle0.github.io/mmac/)입니다.
+명문학원 초/중급 및 기타 반 문제풀이용 [홈페이지](https://doodle0.github.io/mmaclearn/)입니다.
 
 ## 수정 권한
 
