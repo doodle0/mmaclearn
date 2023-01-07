@@ -1,10 +1,10 @@
 [
   {
-    "chapter_id": "ch-print",
-    "chapter_name": "파이썬 문법",
-    "chapter_description": "print, 변수, 사칙연산, 문자열",
-    "chapter_concepts": [],
-    "chapter_problems": [
+    "id": "ch-print",
+    "title": "파이썬 문법",
+    "description": "print, 변수, 사칙연산, 문자열",
+    "concepts": [],
+    "problems": [
       {
         "from": "백준",
         "name": "개",
@@ -23,10 +23,10 @@
     ]
   },
   {
-    "chapter_id": "ch-if",
-    "chapter_name": "if",
-    "chapter_concepts": [],
-    "chapter_problems": [
+    "id": "ch-if",
+    "title": "if",
+    "concepts": [],
+    "problems": [
       {
         "from": "백준",
         "name": "두 수 비교하기",
@@ -50,10 +50,10 @@
     ]
   },
   {
-    "chapter_id": "ch-while",
-    "chapter_name": "while",
-    "chapter_concepts": [],
-    "chapter_problems": [
+    "id": "ch-while",
+    "title": "while",
+    "concepts": [],
+    "problems": [
       {
         "from": "더블릿",
         "name": "3n+1",
@@ -67,10 +67,10 @@
     ]
   },
   {
-    "chapter_id": "ch-for",
-    "chapter_name": "for, range",
-    "chapter_concepts": [],
-    "chapter_problems": [
+    "id": "ch-for",
+    "title": "for, range",
+    "concepts": [],
+    "problems": [
       {
         "from": "더블릿",
         "name": "약수 종합 선물 세트",
@@ -99,10 +99,10 @@
     ]
   },
   {
-    "chapter_id": "ch-str",
-    "chapter_name": "문자열(str)",
-    "chapter_concepts": [],
-    "chapter_problems": [
+    "id": "ch-str",
+    "title": "문자열(str)",
+    "concepts": [],
+    "problems": [
       {
         "from": "백준",
         "name": "별 찍기 - 2",
@@ -136,10 +136,10 @@
     ]
   },
   {
-    "chapter_id": "ch-list-map",
-    "chapter_name": "list, map",
-    "chapter_concepts": [],
-    "chapter_problems": [
+    "id": "ch-list-map",
+    "title": "list, map",
+    "concepts": [],
+    "problems": [
       {
         "from": "더블릿",
         "name": "반대로 출력",
@@ -163,11 +163,11 @@
     ]
   },
   {
-    "chapter_id": "ch-list2",
-    "chapter_name": "리스트 심화",
-    "chapter_description": "중첩 리스트, 리스트 표현식",
-    "chapter_concepts": [],
-    "chapter_problems": [
+    "id": "ch-list2",
+    "title": "리스트 심화",
+    "description": "중첩 리스트, 리스트 표현식",
+    "concepts": [],
+    "problems": [
       {
         "from": "더블릿",
         "name": "3 * 3 블럭의 합",
@@ -191,10 +191,10 @@
     ]
   },
   {
-    "chapter_id": "ch-func",
-    "chapter_name": "함수, 재귀",
-    "chapter_concepts": [],
-    "chapter_problems": [
+    "id": "ch-func",
+    "title": "함수, 재귀",
+    "concepts": [],
+    "problems": [
       {
         "from": "더블릿",
         "name": "뒤집어 더하기",
@@ -243,10 +243,10 @@
     ]
   },
   {
-    "chapter_id": "ch-tuple",
-    "chapter_name": "튜플(tuple)",
-    "chapter_concepts": [],
-    "chapter_problems": [
+    "id": "ch-tuple",
+    "title": "튜플(tuple)",
+    "concepts": [],
+    "problems": [
       {
         "from": "백준",
         "name": "좌표 정렬하기",
@@ -260,10 +260,10 @@
     ]
   },
   {
-    "chapter_id": "ch-zip-enum",
-    "chapter_name": "zip, enumerate",
-    "chapter_concepts": [],
-    "chapter_problems": [
+    "id": "ch-zip-enum",
+    "title": "zip, enumerate",
+    "concepts": [],
+    "problems": [
       {
         "from": "자체",
         "name": "벡터의 덧셈",
@@ -282,10 +282,10 @@
     ]
   },
   {
-    "chapter_id": "ch-set-dict",
-    "chapter_name": "set, dict",
-    "chapter_concepts": [],
-    "chapter_problems": [
+    "id": "ch-set-dict",
+    "title": "set, dict",
+    "concepts": [],
+    "problems": [
       {
         "from": "더블릿",
         "name": "서로 다른 수의 개수",

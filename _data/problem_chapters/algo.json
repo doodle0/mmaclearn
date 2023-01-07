@@ -1,9 +1,9 @@
 [
   {
-    "chapter_id": "ch-function",
-    "chapter_name": "함수",
-    "chapter_concepts": [],
-    "chapter_problems": [
+    "id": "ch-function",
+    "title": "함수",
+    "concepts": [],
+    "problems": [
       {
         "from": "더블릿",
         "name": "뒤집어 더하기",
@@ -27,16 +27,16 @@
     ]
   },
   {
-    "chapter_id": "ch-recursion",
-    "chapter_name": "재귀",
-    "chapter_description": "재귀, 재귀를 사용한 브루트포스",
-    "chapter_concepts": [
+    "id": "ch-recursion",
+    "title": "재귀",
+    "description": "재귀, 재귀를 사용한 브루트포스",
+    "concepts": [
       {
-        "concept_title": "재귀 개념",
+        "title": "재귀 개념",
         "link": "http://220.89.64.243/30stair/recursion/recursion.php?pname=recursion"
       }
     ],
-    "chapter_problems": [
+    "problems": [
       {
         "from": "더블릿",
         "name": "x의 y거듭제곱",
@@ -90,20 +90,20 @@
     ]
   },
   {
-    "chapter_id": "ch-string",
-    "chapter_name": "문자열",
-    "chapter_description": "문자열, 문자열 관련 함수",
-    "chapter_concepts": [
+    "id": "ch-string",
+    "title": "문자열",
+    "description": "문자열, 문자열 관련 함수",
+    "concepts": [
       {
-        "concept_title": "아스키 코드",
-        "link": "docs/ascii.html"
+        "title": "아스키 코드",
+        "link": "/docs/ascii.html"
       },
       {
-        "concept_title": "문자열 개념",
-        "link": "docs/string.html"
+        "title": "문자열 개념",
+        "link": "/docs/string.html"
       }
     ],
-    "chapter_problems": [
+    "problems": [
       {
         "from": "백준",
         "name": "아스키 코드",
@@ -152,15 +152,15 @@
     ]
   },
   {
-    "chapter_id": "ch-stack",
-    "chapter_name": "스택",
-    "chapter_concepts": [
+    "id": "ch-stack",
+    "title": "스택",
+    "concepts": [
       {
-        "concept_title": "스택 개념",
+        "title": "스택 개념",
         "link": "http://220.89.64.243/30stair/stack/stack.php?pname=stack"
       }
     ],
-    "chapter_problems": [
+    "problems": [
       {
         "from": "백준",
         "name": "스택",
@@ -199,16 +199,16 @@
     ]
   },
   {
-    "chapter_id": "ch-queue",
-    "chapter_name": "큐",
-    "chapter_description": "큐, 너비 우선 탐색(BFS)",
-    "chapter_concepts": [
+    "id": "ch-queue",
+    "title": "큐",
+    "description": "큐, 너비 우선 탐색(BFS)",
+    "concepts": [
       {
-        "concept_title": "큐 개념",
+        "title": "큐 개념",
         "link": "http://220.89.64.243/30stair/queue/queue.php?pname=queue"
       }
     ],
-    "chapter_problems": [
+    "problems": [
       {
         "from": "백준",
         "name": "큐",
@@ -242,16 +242,16 @@
     ]
   },
   {
-    "chapter_id": "ch-graph1",
-    "chapter_name": "그래프, 탐색",
-    "chapter_description": "그래프, BFS, DFS, Flood Fill",
-    "chapter_concepts": [
+    "id": "ch-graph1",
+    "title": "그래프, 탐색",
+    "description": "그래프, BFS, DFS, Flood Fill",
+    "concepts": [
       {
-        "concept_title": "그래프 개념",
-        "link": "docs/graph.html"
+        "title": "그래프 개념",
+        "link": "/docs/graph.html"
       }
     ],
-    "chapter_problems": [
+    "problems": [
       {
         "from": "백준",
         "name": "바이러스",
@@ -290,15 +290,15 @@
     ]
   },
   {
-    "chapter_id": "ch-dp",
-    "chapter_name": "DP",
-    "chapter_concepts": [
+    "id": "ch-dp",
+    "title": "DP",
+    "concepts": [
       {
-        "concept_title": "DP 개념",
+        "title": "DP 개념",
         "link": "http://220.89.64.243/30stair/dp_doc/dp_doc.php?pname=dp_doc"
       }
     ],
-    "chapter_problems": [
+    "problems": [
       {
         "from": "백준",
         "name": "DP의 기본 (문제집)",
@@ -322,10 +322,10 @@
     ]
   },
   {
-    "chapter_id": "ch-greedy",
-    "chapter_name": "그리디",
-    "chapter_concepts": [],
-    "chapter_problems": [
+    "id": "ch-greedy",
+    "title": "그리디",
+    "concepts": [],
+    "problems": [
       {
         "from": "백준",
         "name": "동전 0",
@@ -359,24 +359,24 @@
     ]
   },
   {
-    "chapter_id": "ch-tree",
-    "chapter_name": "트리",
-    "chapter_description": "트리, 이진 트리, 힙",
-    "chapter_concepts": [
+    "id": "ch-tree",
+    "title": "트리",
+    "description": "트리, 이진 트리, 힙",
+    "concepts": [
       {
-        "concept_title": "트리 개념",
-        "link": "docs/tree.html"
+        "title": "트리 개념",
+        "link": "/docs/tree.html"
       },
       {
-        "concept_title": "이진 트리",
+        "title": "이진 트리",
         "link": "#"
       },
       {
-        "concept_title": "힙",
+        "title": "힙",
         "link": "http://220.89.64.243/30stair/heap/heap.php?pname=heap"
       }
     ],
-    "chapter_problems": [
+    "problems": [
       {
         "from": "백준",
         "name": "가장 가까운 공통 조상",
@@ -430,11 +430,11 @@
     ]
   },
   {
-    "chapter_id": "ch-graph2",
-    "chapter_name": "그래프 2",
-    "chapter_description": "최단 경로, 위상 정렬, 최소 스패닝 트리, etc...",
-    "chapter_concepts": [],
-    "chapter_problems": [
+    "id": "ch-graph2",
+    "title": "그래프 2",
+    "description": "최단 경로, 위상 정렬, 최소 스패닝 트리, etc...",
+    "concepts": [],
+    "problems": [
       {
         "from": "백준",
         "name": "최단경로",
@@ -498,11 +498,11 @@
     ]
   },
   {
-    "chapter_id": "ch-backtracking",
-    "chapter_name": "백트래킹",
-    "chapter_description": "브루트포스/백트래킹 부류 알고리즘",
-    "chapter_concepts": [],
-    "chapter_problems": [
+    "id": "ch-backtracking",
+    "title": "백트래킹",
+    "description": "브루트포스/백트래킹 부류 알고리즘",
+    "concepts": [],
+    "problems": [
       {
         "from": "백준",
         "name": "스타트와 링크",
@@ -536,10 +536,10 @@
     ]
   },
   {
-    "chapter_id": "ch-divcon",
-    "chapter_name": "분할 정복",
-    "chapter_concepts": [],
-    "chapter_problems": [
+    "id": "ch-divcon",
+    "title": "분할 정복",
+    "concepts": [],
+    "problems": [
       {
         "from": "백준",
         "name": "Z",
@@ -568,11 +568,11 @@
     ]
   },
   {
-    "chapter_id": "ch-binsearch",
-    "chapter_name": "이분 탐색",
-    "chapter_description": "이분 탐색, Parametric Search, Meet in the Middle",
-    "chapter_concepts": [],
-    "chapter_problems": [
+    "id": "ch-binsearch",
+    "title": "이분 탐색",
+    "description": "이분 탐색, Parametric Search, Meet in the Middle",
+    "concepts": [],
+    "problems": [
       {
         "from": "백준",
         "name": "수 찾기",
@@ -606,10 +606,10 @@
     ]
   },
   {
-    "chapter_id": "ch-dp2",
-    "chapter_name": "DP 2",
-    "chapter_concepts": [],
-    "chapter_problems": [
+    "id": "ch-dp2",
+    "title": "DP 2",
+    "concepts": [],
+    "problems": [
       {
         "from": "백준",
         "name": "DP 완전정복 (문제집)",
@@ -643,11 +643,11 @@
     ]
   },
   {
-    "chapter_id": "ch-impl",
-    "chapter_name": "단순 구현",
-    "chapter_description": "유익한 단순 구현 문제",
-    "chapter_concepts": [],
-    "chapter_problems": [
+    "id": "ch-impl",
+    "title": "단순 구현",
+    "description": "유익한 단순 구현 문제",
+    "concepts": [],
+    "problems": [
       {
         "from": "백준",
         "name": "참외밭",
@@ -676,11 +676,11 @@
     ]
   },
   {
-    "chapter_id": "ch-logic",
-    "chapter_name": "논리",
-    "chapter_description": "유익한 논리 문제",
-    "chapter_concepts": [],
-    "chapter_problems": [
+    "id": "ch-logic",
+    "title": "논리",
+    "description": "유익한 논리 문제",
+    "concepts": [],
+    "problems": [
       {
         "from": "백준",
         "name": "볼 모으기",
@@ -699,9 +699,9 @@
     ]
   },
   {
-    "chapter_id": "ch-etc",
-    "chapter_name": "기타",
-    "chapter_concepts": [],
-    "chapter_problems": []
+    "id": "ch-etc",
+    "title": "기타",
+    "concepts": [],
+    "problems": []
   }
 ]

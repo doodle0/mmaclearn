@@ -1,0 +1,18 @@
+<div class="position-fixed bottom-0 end-0">
+    <button type="button" id="to-top-btn" class="btn btn-primary d-none m-3 shadow">
+        <i class="fa fa-chevron-up"></i>&nbsp;top
+    </button>
+</div>
+
+<script>
+    $('#to-top-btn').click(() => {
+        $('html, body').animate({ scrollTop: 0 }, 0);
+    });
+    $(window).scroll(() => {
+        if ($(this).scrollTop() > 200) {
+            $("#to-top-btn").removeClass('d-none');
+        } else {
+            $("#to-top-btn").addClass('d-none');
+        }
+    });
+</script>

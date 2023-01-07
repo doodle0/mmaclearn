@@ -1,0 +1,66 @@
+---
+layout: custom_base
+---
+
+{%- assign chapters = site.data.problem_chapters[page.menu_id] -%}
+
+{%- include sidebars/problem_page.html chapters=chapters -%}
+
+<!-- main -->
+<main id="main-container" class="col">
+  {%- for chapter in chapters -%}
+  <div class="card card-default shadow-sm my-4" id="{{chapter.id}}">
+    <!-- card-header -->
+    <div class="card-header">
+      <div class="row">
+        <h4 class="col-auto m-0">{{chapter.title}}</h4>
+        {%- if chapter.description -%}
+        <div class="col-auto align-self-end text-muted">— {{chapter.description}}</div>
+        {%- endif -%}
+      </div>
+    </div>
+
+    <!-- card-body -->
+    {%- if chapter.concepts != nil and chapter.concepts != empty -%}
+    <div class="card-body">
+      {%- for concept in chapter.concepts -%}
+      <a class="btn btn-outline-primary m-1" role="button" href="{{concept.link}}">
+        <i class="far fa-file"></i>&nbsp;{{concept.title}}
+      </a>
+      {%- endfor -%}
+    </div>
+    {%- endif -%}
+
+    <!-- table -->
+    {%- if chapter.problems != nil and chapter.problems != empty -%}
+    <table class="table table-striped mb-0">
+      <thead><tr><th width="20%">번호</th><th>문제</th><th width="25%">출처</th></tr></thead>
+      <tbody>
+        {%- assign pi = 1 -%}
+        {%- for problem in chapter.problems -%}
+        <tr>
+          <td>{{pi}}</td>
+          <td><a href="{{problem.link}}">{{problem.name}}</a></td>
+          <td>{{problem.from}}</td>
+        </tr>
+        {%- assign pi = pi | plus: 1 -%}
+        {%- endfor -%}
+      </tbody>
+    </table>
+    {%- endif -%}
+  </div>
+  {%- endfor -%}
+</main>
+
+<script>
+// 앵커가 내비게이션 바에 가려지지 않게 스크롤 위치 수정
+$('#chapter-nav .nav-link').click(function() {
+    var divId = $(this).attr('href');
+    $('html, body').animate({ scrollTop: $(divId).offset().top - $('#navbar').outerHeight() }, 10);
+});
+
+function onNavItemClick(e) {
+    $("#chapter-nav .active").removeClass("active");
+    $(e).addClass("active");
+}
+</script>

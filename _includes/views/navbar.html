@@ -1,0 +1,30 @@
+<nav id="navbar" class="navbar navbar-expand-md sticky-top navbar-light bg-light shadow-sm">
+  <div id="navbar-inner" class="container-xxl">
+    <div class="d-flex align-items-center">
+      <h2 class="my-0">{{ site.title }}</h2>
+      <h5 class="my-0 px-2">—</h5>
+      <h5 id="subtitle" class="my-0 d-md-none">{{ page.title }}</h5>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul id="navbar-ul" class="navbar-nav">
+        {%- for menu_id in site.data.menu_layout -%}
+        {%- if menu_id == '-' -%}
+        <li class="my-1 mx-1 border-top border-start"></li>
+        {%- else -%}
+        <li class="px-1 px-md-0">
+          {%- assign from_page_list = site.pages | where: "menu_id", menu_id -%}
+          {%- assign from_page_list = from_page_list[0] -%}
+          {%- assign from_custom_menu_list = site.data.custom_menus[menu_id] -%}
+
+          {%- assign me = from_page_list | default: from_custom_menu_list -%}
+          <a class="nav-link {% if menu_id == page.menu_id %}active{% else %}link-dark{% endif %}" href="{{me.url}}">{{me.title}}</a>
+        </li>
+        {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</nav>

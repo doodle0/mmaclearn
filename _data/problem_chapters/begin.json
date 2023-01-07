@@ -1,13 +1,13 @@
 [
   {
-    "chapter_id": "ch-for",
-    "chapter_name": "반복문(for/while)",
-    "chapter_concepts": [
+    "id": "ch-for",
+    "title": "반복문(for/while)",
+    "concepts": [
       {
-        "concept_title": "for문 개념",
+        "title": "for문 개념",
         "link": "http://220.89.64.243/30stair/stair3/stair3.php?pname=stair3"
       }],
-    "chapter_problems": [
+    "problems": [
       {
         "from": "더블릿",
         "name": "별 출력/star",
@@ -131,14 +131,14 @@
     ]
   },
   {
-    "chapter_id": "ch-for2",
-    "chapter_name": "다중반복문",
-    "chapter_concepts": [
+    "id": "ch-for2",
+    "title": "다중반복문",
+    "concepts": [
       {
-        "concept_title": "다중반복문 개념",
+        "title": "다중반복문 개념",
         "link": "http://220.89.64.243/30stair/nested_for/nested_for.php?pname=nested_for"
       }],
-    "chapter_problems": [
+    "problems": [
       {
         "from": "더블릿",
         "name": "직각 삼각형 (별)/tri1",
@@ -257,19 +257,19 @@
     ]
   },
   {
-    "chapter_id": "ch-array",
-    "chapter_name": "배열array",
-    "chapter_concepts": [
+    "id": "ch-array",
+    "title": "배열array",
+    "concepts": [
       {
-        "concept_title": "배열 개념",
+        "title": "배열 개념",
         "link": "http://220.89.64.243/30stair/array/array.php?pname=array"
       },
       {
-        "concept_title": "정렬 개념",
+        "title": "정렬 개념",
         "link": "http://220.89.64.243/30stair/sorting/sorting.php?pname=sorting"
       }
     ],
-    "chapter_problems": [
+    "problems": [
       {
         "from": "더블릿",
         "name": "반대로 출력/rprint",
@@ -343,14 +343,14 @@
     ]
   },
   {
-    "chapter_id": "ch-array2",
-    "chapter_name": "다차원배열",
-    "chapter_concepts": [
+    "id": "ch-array2",
+    "title": "다차원배열",
+    "concepts": [
       {
-        "concept_title": "다차원배열 개념",
+        "title": "다차원배열 개념",
         "link": "http://220.89.64.243/30stair/multidim_doc/multidim_doc.php?pname=multidim_doc"
       }],
-    "chapter_problems": [
+    "problems": [
       {
         "from": "더블릿",
         "name": "합의 법칙/sum_rule",

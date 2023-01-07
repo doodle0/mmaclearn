@@ -1,0 +1,15 @@
+<!-- sidebar -->
+<div id="chapter-nav-area" class="col-12 px-0 bg-light">
+  <div id="chapter-nav" class="nav nav-pills sticky-md-top flex-column">
+    <nav id="chapter-nav-inner" class="overflow-auto">
+      <ul id="chapter-nav-list" class="nav nav-pills flex-md-column justify-content-around">
+        <li class="nav-item d-none d-md-block mx-auto my-3">
+          <h5 class="m-0">{{page.title}}</h5>
+        </li>
+        {%- for chapter in include.chapters -%}
+        <li class="nav-item"><a class="nav-link" href="#{{chapter.id}}" onclick="onNavItemClick(this)">{{chapter.title}}</a></li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+  </div>
+</div>
