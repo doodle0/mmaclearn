@@ -18,7 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "명문온라인"
+title: "명문 온라인"
+description: "명문올림피아드학원 온라인 학습 홈페이지"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://learn.mmac.kr" # the base hostname & protocol for your site, e.g. http://example.com
 
