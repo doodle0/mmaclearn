@@ -1,4 +1,4 @@
-# 명문온라인
+# mmaclearn
 
 명문학원 초/중급 및 기타 반 문제풀이용 [사이트](https://doodle0.github.io/mmaclearn/)입니다.
 
