@@ -12,10 +12,10 @@ layout: custom_base
   <div class="card card-default shadow-sm my-4" id="{{chapter.id}}">
     <!-- card-header -->
     <div class="card-header">
-      <div class="row">
+      <div class="row align-items-center">
         <h4 class="col-auto m-0">{{chapter.title}}</h4>
         {%- if chapter.description -%}
-        <div class="col-auto align-self-end text-muted">— {{chapter.description}}</div>
+        <div class="col-auto text-muted">— {{chapter.description}}</div>
         {%- endif -%}
       </div>
     </div>
