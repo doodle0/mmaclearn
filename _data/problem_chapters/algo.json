@@ -7,12 +7,12 @@
       {
         "from": "더블릿",
         "name": "뒤집어 더하기",
-        "link": "http://220.89.64.243/30stair/radd/radd.php?pname=radd"
+        "link": "http://59.23.132.191/30stair/radd/radd.php?pname=radd"
       },
       {
         "from": "더블릿",
         "name": "수 뒤집기",
-        "link": "http://220.89.64.243/30stair/rev/rev.php?pname=rev"
+        "link": "http://59.23.132.191/30stair/rev/rev.php?pname=rev"
       },
       {
         "from": "백준",
@@ -22,7 +22,7 @@
       {
         "from": "더블릿",
         "name": "골드바하의 추측",
-        "link": "http://220.89.64.243/30stair/goldbach/goldbach.php?pname=goldbach"
+        "link": "http://59.23.132.191/30stair/goldbach/goldbach.php?pname=goldbach"
       }
     ]
   },
@@ -33,44 +33,44 @@
     "concepts": [
       {
         "title": "재귀 개념",
-        "link": "http://220.89.64.243/30stair/recursion/recursion.php?pname=recursion"
+        "link": "http://59.23.132.191/30stair/recursion/recursion.php?pname=recursion"
       }
     ],
     "problems": [
       {
         "from": "더블릿",
         "name": "x의 y거듭제곱",
-        "link": "http://220.89.64.243/30stair/powerofx/powerofx.php?pname=powerofx"
+        "link": "http://59.23.132.191/30stair/powerofx/powerofx.php?pname=powerofx"
       },
       {
         "from": "더블릿",
         "name": "유클리드 호제법",
-        "link": "http://220.89.64.243/30stair/euclid/euclid.php?pname=euclid"
+        "link": "http://59.23.132.191/30stair/euclid/euclid.php?pname=euclid"
       },
       {
         "from": "더블릿",
         "name": "계단 오르기",
-        "link": "http://220.89.64.243/30stair/upstair/upstair.php?pname=upstair"
+        "link": "http://59.23.132.191/30stair/upstair/upstair.php?pname=upstair"
       },
       {
         "from": "더블릿",
         "name": "이진수로 변경",
-        "link": "http://220.89.64.243/30stair/tobin/tobin.php?pname=tobin"
+        "link": "http://59.23.132.191/30stair/tobin/tobin.php?pname=tobin"
       },
       {
         "from": "더블릿",
         "name": "산크기 모양",
-        "link": "http://220.89.64.243/30stair/mt/mt.php?pname=mt"
+        "link": "http://59.23.132.191/30stair/mt/mt.php?pname=mt"
       },
       {
         "from": "더블릿",
         "name": "좌우 대칭 산 모양",
-        "link": "http://220.89.64.243/30stair/pTp/pTp.php?pname=pTp"
+        "link": "http://59.23.132.191/30stair/pTp/pTp.php?pname=pTp"
       },
       {
         "from": "더블릿",
         "name": "하노이 탑",
-        "link": "http://220.89.64.243/30stair/hanoi/hanoi.php?pname=hanoi"
+        "link": "http://59.23.132.191/30stair/hanoi/hanoi.php?pname=hanoi"
       },
       {
         "from": "백준",
@@ -117,7 +117,7 @@
       {
         "from": "더블릿",
         "name": "알파벳 빈도수",
-        "link": "http://220.89.64.243/30stair/fa/fa.php?pname=fa"
+        "link": "http://59.23.132.191/30stair/fa/fa.php?pname=fa"
       },
       {
         "from": "백준",
@@ -127,7 +127,7 @@
       {
         "from": "더블릿",
         "name": "진법 변환",
-        "link": "http://220.89.64.243/30stair/radix/radix.php?pname=radix"
+        "link": "http://59.23.132.191/30stair/radix/radix.php?pname=radix"
       },
       {
         "from": "백준",
@@ -137,17 +137,17 @@
       {
         "from": "더블릿",
         "name": "단어별 역순",
-        "link": "http://220.89.64.243/30stair/esrever/esrever.php?pname=esrever"
+        "link": "http://59.23.132.191/30stair/esrever/esrever.php?pname=esrever"
       },
       {
         "from": "더블릿",
         "name": "콤마 찍기",
-        "link": "http://220.89.64.243/30stair/comma/comma.php?pname=comma"
+        "link": "http://59.23.132.191/30stair/comma/comma.php?pname=comma"
       },
       {
         "from": "더블릿",
         "name": "암호 해독",
-        "link": "http://220.89.64.243/30stair/crypt/crypt.php?pname=crypt"
+        "link": "http://59.23.132.191/30stair/crypt/crypt.php?pname=crypt"
       }
     ]
   },
@@ -157,7 +157,7 @@
     "concepts": [
       {
         "title": "스택 개념",
-        "link": "http://220.89.64.243/30stair/stack/stack.php?pname=stack"
+        "link": "http://59.23.132.191/30stair/stack/stack.php?pname=stack"
       }
     ],
     "problems": [
@@ -169,17 +169,17 @@
       {
         "from": "더블릿",
         "name": "짝이 맞는 괄호 찾기",
-        "link": "http://220.89.64.243/30stair/match/match.php?pname=match"
+        "link": "http://59.23.132.191/30stair/match/match.php?pname=match"
       },
       {
         "from": "더블릿",
         "name": "카탈란 수",
-        "link": "http://220.89.64.243/30stair/catalan/catalan.php?pname=catalan"
+        "link": "http://59.23.132.191/30stair/catalan/catalan.php?pname=catalan"
       },
       {
         "from": "더블릿",
         "name": "Bad Hair Day",
-        "link": "http://220.89.64.243/30stair/bhd/bhd.php?pname=bhd"
+        "link": "http://59.23.132.191/30stair/bhd/bhd.php?pname=bhd"
       },
       {
         "from": "백준",
@@ -205,7 +205,7 @@
     "concepts": [
       {
         "title": "큐 개념",
-        "link": "http://220.89.64.243/30stair/queue/queue.php?pname=queue"
+        "link": "http://59.23.132.191/30stair/queue/queue.php?pname=queue"
       }
     ],
     "problems": [
@@ -217,17 +217,17 @@
       {
         "from": "더블릿",
         "name": "도망간 소를 잡아라",
-        "link": "http://220.89.64.243/30stair/catch_cow/catch_cow.php?pname=catch_cow"
+        "link": "http://59.23.132.191/30stair/catch_cow/catch_cow.php?pname=catch_cow"
       },
       {
         "from": "더블릿",
         "name": "최단 거리 미로",
-        "link": "http://220.89.64.243/30stair/maze/maze.php?pname=maze"
+        "link": "http://59.23.132.191/30stair/maze/maze.php?pname=maze"
       },
       {
         "from": "더블릿",
         "name": "소수 길",
-        "link": "http://220.89.64.243/30stair/prime_path/prime_path.php?pname=prime_path"
+        "link": "http://59.23.132.191/30stair/prime_path/prime_path.php?pname=prime_path"
       },
       {
         "from": "백준",
@@ -260,7 +260,7 @@
       {
         "from": "더블릿",
         "name": "미로찾기",
-        "link": "http://220.89.64.243/30stair/starship_maze/starship_maze.php?pname=starship_maze"
+        "link": "http://59.23.132.191/30stair/starship_maze/starship_maze.php?pname=starship_maze"
       },
       {
         "from": "백준",
@@ -295,7 +295,7 @@
     "concepts": [
       {
         "title": "DP 개념",
-        "link": "http://220.89.64.243/30stair/dp_doc/dp_doc.php?pname=dp_doc"
+        "link": "http://59.23.132.191/30stair/dp_doc/dp_doc.php?pname=dp_doc"
       }
     ],
     "problems": [
@@ -307,12 +307,12 @@
       {
         "from": "더블릿",
         "name": "SCV 자원 채취",
-        "link": "http://220.89.64.243/30stair/scv/scv.php?pname=scv"
+        "link": "http://59.23.132.191/30stair/scv/scv.php?pname=scv"
       },
       {
         "from": "더블릿",
         "name": "긋기 게임",
-        "link": "http://220.89.64.243/30stair/gc/gc.php?pname=gc"
+        "link": "http://59.23.132.191/30stair/gc/gc.php?pname=gc"
       },
       {
         "from": "백준",
@@ -334,12 +334,12 @@
       {
         "from": "더블릿",
         "name": "냅색 문제",
-        "link": "http://220.89.64.243/30stair/knapsack/knapsack.php?pname=knapsack"
+        "link": "http://59.23.132.191/30stair/knapsack/knapsack.php?pname=knapsack"
       },
       {
         "from": "더블릿",
         "name": "우유 구입",
-        "link": "http://220.89.64.243/30stair/mixing_milk/mixing_milk.php?pname=mixing_milk"
+        "link": "http://59.23.132.191/30stair/mixing_milk/mixing_milk.php?pname=mixing_milk"
       },
       {
         "from": "백준",
@@ -373,7 +373,7 @@
       },
       {
         "title": "힙",
-        "link": "http://220.89.64.243/30stair/heap/heap.php?pname=heap"
+        "link": "http://59.23.132.191/30stair/heap/heap.php?pname=heap"
       }
     ],
     "problems": [
@@ -395,12 +395,12 @@
       {
         "from": "더블릿",
         "name": "이진트리 방문 I",
-        "link": "http://220.89.64.243/30stair/postorder/postorder.php?pname=postorder"
+        "link": "http://59.23.132.191/30stair/postorder/postorder.php?pname=postorder"
       },
       {
         "from": "더블릿",
         "name": "이진트리 깊이",
-        "link": "http://220.89.64.243/30stair/depth/depth.php?pname=depth"
+        "link": "http://59.23.132.191/30stair/depth/depth.php?pname=depth"
       },
       {
         "from": "백준",
@@ -511,12 +511,12 @@
       {
         "from": "더블릿",
         "name": "비트 패턴",
-        "link": "http://220.89.64.243/30stair/pat/pat.php?pname=pat"
+        "link": "http://59.23.132.191/30stair/pat/pat.php?pname=pat"
       },
       {
         "from": "더블릿",
         "name": "축사 보안장치",
-        "link": "http://220.89.64.243/30stair/secure/secure.php?pname=secure"
+        "link": "http://59.23.132.191/30stair/secure/secure.php?pname=secure"
       },
       {
         "from": "백준",
@@ -618,27 +618,27 @@
       {
         "from": "더블릿",
         "name": "점프",
-        "link": "http://220.89.64.243/30stair/jumping_cow/jumping_cow.php?pname=jumping_cow"
+        "link": "http://59.23.132.191/30stair/jumping_cow/jumping_cow.php?pname=jumping_cow"
       },
       {
         "from": "더블릿",
         "name": "부분 합",
-        "link": "http://220.89.64.243/30stair/subset/subset.php?pname=subset"
+        "link": "http://59.23.132.191/30stair/subset/subset.php?pname=subset"
       },
       {
         "from": "더블릿",
         "name": "연속적인 소수의 합",
-        "link": "http://220.89.64.243/30stair/primes/primes.php?pname=primes"
+        "link": "http://59.23.132.191/30stair/primes/primes.php?pname=primes"
       },
       {
         "from": "더블릿",
         "name": "정사각형 개수",
-        "link": "http://220.89.64.243/30stair/range/range.php?pname=range"
+        "link": "http://59.23.132.191/30stair/range/range.php?pname=range"
       },
       {
         "from": "더블릿",
         "name": "분할 수",
-        "link": "http://220.89.64.243/30stair/partition/partition.php?pname=partition"
+        "link": "http://59.23.132.191/30stair/partition/partition.php?pname=partition"
       }
     ]
   },
