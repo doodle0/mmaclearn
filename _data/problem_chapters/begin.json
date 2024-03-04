@@ -34,11 +34,6 @@
         "link": "http://59.23.132.191/30stair/sum/sum.php?pname=sum"
       },
       {
-        "from": "백준",
-        "name": "x보다 작은 수",
-        "link": "https://www.acmicpc.net/problem/10871"
-      },
-      {
         "from": "더블릿",
         "name": "순차합/seq2",
         "link": "http://59.23.132.191/30stair/seq2/seq2.php?pname=seq2"
