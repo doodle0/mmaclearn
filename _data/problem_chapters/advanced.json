@@ -13,6 +13,16 @@
         "from": "백준",
         "name": "여행 가자",
         "link": "https://www.acmicpc.net/problem/1976"
+      },
+      {
+        "from": "백준",
+        "name": "카드 게임",
+        "link": "https://www.acmicpc.net/problem/16566"
+      },
+      {
+        "from": "백준",
+        "name": "공항",
+        "link": "https://www.acmicpc.net/problem/10775"
       }
     ]
   },
@@ -99,7 +109,7 @@
   {
     "id": "ch-graph3",
     "title": "그래프 3",
-    "description": "SCC, 2-SAT, 이분 매칭(추가예정)",
+    "description": "SCC, 2-SAT, 이분 매칭",
     "concepts": [],
     "problems": [
       {
@@ -116,6 +126,16 @@
         "from": "백준",
         "name": "아이돌",
         "link": "https://www.acmicpc.net/problem/3648"
+      },
+      {
+        "from": "백준",
+        "name": "열혈강호",
+        "link": "https://www.acmicpc.net/problem/11375"
+      },
+      {
+        "from": "백준",
+        "name": "노트북의 주인을 찾아서",
+        "link": "https://www.acmicpc.net/problem/1298"
       }
     ]
   },
@@ -185,6 +205,11 @@
       },
       {
         "from": "백준",
+        "name": "임계경로",
+        "link": "https://www.acmicpc.net/problem/1948"
+      },
+      {
+        "from": "백준",
         "name": "대기업 승범이네",
         "link": "https://www.acmicpc.net/problem/17831"
       },
@@ -192,13 +217,18 @@
         "from": "백준",
         "name": "길의 개수",
         "link": "https://www.acmicpc.net/problem/1533"
+      },
+      {
+        "from": "백준",
+        "name": "ATM",
+        "link": "https://www.acmicpc.net/problem/4013"
       }
     ]
   },
   {
     "id": "ch-str2",
     "title": "문자열 알고리즘",
-    "description": "트라이, KMP, Manacher",
+    "description": "트라이, KMP, 접미사·LCP 배열, Manacher",
     "concepts": [],
     "problems": [
       {
@@ -225,6 +255,16 @@
         "from": "백준",
         "name": "시계 사진들",
         "link": "https://www.acmicpc.net/problem/10266"
+      },
+      {
+        "from": "백준",
+        "name": "Suffix Array",
+        "link": "https://www.acmicpc.net/problem/9248"
+      },
+      {
+        "from": "백준",
+        "name": "가장 긴 문자열",
+        "link": "https://www.acmicpc.net/problem/3033"
       },
       {
         "from": "백준",
