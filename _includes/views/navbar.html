@@ -20,7 +20,7 @@
           {%- assign from_custom_menu_list = site.data.custom_menus[menu_id] -%}
 
           {%- assign me = from_page_list | default: from_custom_menu_list -%}
-          <a class="nav-link {% if menu_id == page.menu_id %}active{% else %}link-dark{% endif %}" href="{{me.url}}">{{me.title}}</a>
+          <a class="nav-link {% if menu_id == page.menu_id %}active{% else %}link-dark{% endif %}" href="{{me.url | relative_url}}">{{me.title}}</a>
         </li>
         {%- endif -%}
         {%- endfor -%}

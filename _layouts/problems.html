@@ -24,7 +24,7 @@ layout: custom_base
     {%- if chapter.concepts != nil and chapter.concepts != empty -%}
     <div class="card-body">
       {%- for concept in chapter.concepts -%}
-      <a class="btn btn-outline-primary m-1" role="button" href="{{concept.link}}">
+      <a class="btn btn-outline-primary m-1" role="button" href="{{concept.link | relative_url}}">
         <i class="far fa-file"></i>&nbsp;{{concept.title}}
       </a>
       {%- endfor -%}
@@ -40,7 +40,7 @@ layout: custom_base
         {%- for problem in chapter.problems -%}
         <tr>
           <td>{{pi}}</td>
-          <td><a href="{{problem.link}}">{{problem.name}}</a></td>
+          <td><a href="{{problem.link | relative_url}}">{{problem.name}}</a></td>
           <td>{{problem.from}}</td>
         </tr>
         {%- assign pi = pi | plus: 1 -%}
